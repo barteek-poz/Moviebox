@@ -1,0 +1,47 @@
+.navBackground {
+  width: 100%;
+  background-color: var(--color-black);
+  height: 9rem;
+}
+
+.navBar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.navLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.navInput {
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    padding-left: 40px;
+    width: 26.5rem;
+    height: 3.6rem;
+    background-image: url('../../assets/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px ;
+}
+
+.active {
+    border-bottom: 1px solid white;
+    
+}
