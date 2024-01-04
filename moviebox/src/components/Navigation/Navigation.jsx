@@ -4,6 +4,8 @@ import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
 import search from "../../assets/search.svg";
 
+
+//naprawic stan active linkow
 export const Navigation = () => {
   return (
     <div className={styles.navBackground}>

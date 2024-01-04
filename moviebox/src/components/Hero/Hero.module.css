@@ -1,0 +1,40 @@
+.heroImg {
+    height: 60rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.heroBox {
+    max-width: 47.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 6rem;
+    background-color: var(--color-blur);
+}
+
+.heroBox span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.heroBox div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.heroBox .points {
+    font-size: 3rem;
+}
+
+.heroBox p {
+    color: var(--color-white);
+    font-size: 1.6rem;
+}
