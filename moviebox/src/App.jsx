@@ -1,13 +1,14 @@
 import {Hero}  from "./components/Hero/Hero";
 import { MainLayout } from "./components/MainLayout/MainLayout";
-import { Poster } from "./components/Poster/Poster";
+import { PopularTitles } from "./components/PopularTitles/PopularTitles";
+
 
 function App() {
   return (
     <>
       <MainLayout>
         <Hero />
-        <Poster/>
+        <PopularTitles/>
       </MainLayout>
     </>
   );

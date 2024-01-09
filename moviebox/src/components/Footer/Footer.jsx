@@ -12,7 +12,7 @@ export const Footer = () => {
       <CenteredContent>
         <div className={styles.footer}>
           <div className={styles.footerSubs}>
-            <h2>Stay up to date!</h2>
+            <h3>Stay up to date!</h3>
             <p className={styles.footerText}>
               Join our newsletter and never miss the most important premiers of
               the week!

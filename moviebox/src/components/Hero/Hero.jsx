@@ -3,7 +3,7 @@ import { HeroBox } from "../HeroBox/HeroBox";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,13 +19,17 @@ export const Hero = () => {
   return (
     <CenteredContent>
       <Swiper
+        autoplay={{
+          delay: 8000,
+          disableOnInteraction: false,
+        }}
         cssMode={true}
-        navigation={true}
+        navigation={false}
         mousewheel={true}
         keyboard={true}
         loop={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper">
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+        className="heroSwiper">
         {popular.map((title) => {
           return (
             <SwiperSlide key={title.id}>

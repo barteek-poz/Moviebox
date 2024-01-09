@@ -1,40 +1,65 @@
 :root {
-    --color-main: rgba(0, 0, 0, 0.8);
-    --color-black: rgba(0, 0, 0, 1);
-    --color-blur: rgba(0, 0, 0, .5);
-    --color-white:rgba(255, 255, 255, 1);
-    --main-font: 'Roboto', sans-serif
+  --color-main: rgba(0, 0, 0, 0.8);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-blur: rgba(0, 0, 0, 0.5);
+  --color-white: rgba(255, 255, 255, 1);
+  --main-font: "Roboto", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: var(--main-font);
-    background-color: var(--color-main);
-    
+  font-size: 62.5%;
+  font-family: var(--main-font);
+  background-color: var(--color-main);
 }
 
 h2 {
-    font-size: 2.4rem;
-    color: var(--color-white);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 2.4rem;
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 h3 {
-    font-size: 2.2rem;
+  font-size: 2.0rem;
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
-    color: var(--color-white);
+
+/* swiper styles */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--color-white);
 }
+
+.titleSwiper {
+    position: static!important;
+    display: grid!important;
+    margin-left: 50px;
+    
+  }
+  .titleSwiper [class^="swiper-button-"]{
+    inset: initial;
+    margin: 0;
+    align-self: center;
+  }
+  .titleSwiper .swiper-button-prev{
+    justify-self: start;
+    margin-left: -50px;
+  }
+  .titleSwiper .swiper-button-next{
+    justify-self: end;
+    margin-left: 100px;
+  }

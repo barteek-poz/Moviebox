@@ -9,12 +9,12 @@
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+
 }
 
-.infoBox {
-  height: 50%;
+.infoBox {  
   width: 100%;
-  background-color: var(--color-main);
+  background-color: var(--color-black);
   color: var(--color-white);
   font-size: 1.6rem;
   padding: 15px;
