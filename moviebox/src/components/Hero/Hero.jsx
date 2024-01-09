@@ -9,13 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-//loader
-import { useLoaderData } from "react-router-dom";
-
-export const Hero = () => {
-  const loaderData = useLoaderData();
-  const popular = loaderData.results.slice(0, 5);
-  console.log(popular);
+export const Hero = ({titlesArr}) => {
   return (
     <CenteredContent>
       <Swiper
@@ -30,7 +24,7 @@ export const Hero = () => {
         loop={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="heroSwiper">
-        {popular.map((title) => {
+        {titlesArr.map((title) => {
           return (
             <SwiperSlide key={title.id}>
               <HeroBox

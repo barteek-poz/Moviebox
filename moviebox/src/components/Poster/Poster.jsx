@@ -1,32 +1,29 @@
 import styles from "../Poster/Poster.module.css";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
-import backgroundPoster from "../../assets/reacher.jpeg";
-import {Link} from 'react-router-dom'
-export const Poster = ({ title, vote_average, overview }) => {
+import { Link } from "react-router-dom";
+import { useState } from "react";
+export const Poster = ({ title, vote_average, overview, poster }) => {
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <Link
       className={styles.background}
       style={{
-        backgroundImage: `url(${backgroundPoster})`,
+        backgroundImage: `url(https://image.tmdb.org/t/p/original/${poster})`,
       }}>
-      <div className={styles.infoBox}>
+     {showInfo && <div className={styles.infoBox}>
         <div className={styles.firstRow}>
-          <span>{title}Reacher</span>
+          <span>{title}</span>
           <button>
             <img src={ADD_ICON} alt="add-icon" />
           </button>
         </div>
         <div className={styles.secondRow}>
           <img src={STAR_ICON} alt="star-icon" />
-          <p>{vote_average}8.3</p>
+          <p>{vote_average}</p>
         </div>
-        <p>
-          {overview}Itinerant former military policeman Jack Reacher solves
-          crimes and metes out his own brand of street justice. Based on the
-          books by Lee Child.
-        </p>
-      </div>
+        <p>{overview}</p>
+      </div>}
     </Link>
   );
 };

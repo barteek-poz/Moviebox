@@ -44,7 +44,7 @@
 .footerBtn {
     font-size: 1.6rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: .4rem;
     color: var(--color-white);
     background-color: transparent;
@@ -53,7 +53,13 @@
     padding: .6rem;
 }
 
+.footerBtn svg {
+    width: 2rem;
+    height: 2rem;
+}
+
 .footerBtn:hover, .footerBtn:hover svg {
+   
     background-color: var(--color-white);
     color: var(--color-black);
     fill: var(--color-black);

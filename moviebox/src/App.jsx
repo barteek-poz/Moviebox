@@ -1,14 +1,13 @@
-import {Hero}  from "./components/Hero/Hero";
+import { Hero } from "./components/Hero/Hero";
 import { MainLayout } from "./components/MainLayout/MainLayout";
-import { PopularTitles } from "./components/PopularTitles/PopularTitles";
-
+import { TitlesSection } from "./components/TitlesSection/TitlesSection";
 
 function App() {
   return (
     <>
       <MainLayout>
         <Hero />
-        <PopularTitles/>
+        <TitlesSection />
       </MainLayout>
     </>
   );
