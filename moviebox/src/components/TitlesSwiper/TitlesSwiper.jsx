@@ -9,7 +9,6 @@ import { Poster } from "../Poster/Poster";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 export const TitleSwiper = ({ titlesArr }) => {
   return (
-    // naprawic wyswietlanie strzalek - moze dodatkowy div??
     <CenteredContent>
       <Swiper
         loop={true}
