@@ -2,22 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { popularTitles } from "./loaders/popularTitles.js";
-import { popularMovies} from "./loaders/popularMovies.js";
 import { MainPage } from "./pages/MainPage/MainPage.jsx";
 import { MoviesPage } from "./pages/MoviesPage/MoviesPage.jsx";
+import { moviesLoader } from "./loaders/moviesLoader.js";
+import { mainPageLoader } from "./loaders/mainPageLoader.js";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainPage />,
-    loader: popularTitles,
+    loader: mainPageLoader,
   },
   {
     path: "/movies",
     element: <MoviesPage />,
-    loader: popularMovies,
+    loader: moviesLoader,
   },
 ]);
 

@@ -26,7 +26,7 @@ export const Hero = ({titlesArr}) => {
         className="heroSwiper">
         {titlesArr.map((title) => {
           return (
-            <SwiperSlide key={title.id}>
+            <SwiperSlide key={Math.random()}>
               <HeroBox
                 title={title.title}
                 name={title.name}

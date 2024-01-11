@@ -19,7 +19,7 @@ export const TitleSwiper = ({ titlesArr }) => {
         className="titleSwiper">
         {titlesArr.map((title) => {
           return (
-            <SwiperSlide key={title.id}>
+            <SwiperSlide key={Math.random()}>
               <Poster
                 title={title.title}
                 vote_average={title.vote_average}
