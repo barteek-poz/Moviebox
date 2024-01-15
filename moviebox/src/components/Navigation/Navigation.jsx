@@ -25,7 +25,7 @@ export const Navigation = () => {
               Movies
             </NavLink>
             <NavLink
-              to="/tvshows"
+              to="/tv"
               className={({ isActive }) => {
                 return isActive
                   ? `${styles.active, styles.navLink}`

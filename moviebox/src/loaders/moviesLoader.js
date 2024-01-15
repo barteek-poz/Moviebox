@@ -8,11 +8,11 @@ export const moviesLoader = async () => {
   };
   // popular movies
   const popular1 = await fetch(
-    "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+    "https://api.themoviedb.org/3/trending/movie/week?language=en-US&page=1",
     options
   ).then((res) => res.json());
   const popular2 = await fetch(
-    "https://api.themoviedb.org/3/movie/popular?language=en-US&page=2",
+    "https://api.themoviedb.org/3/trending/movie/week?language=en-US&page=2",
     options
   ).then((res) => res.json());
   const popular = [...popular1.results, ...popular2.results].slice(0,25);
@@ -37,7 +37,7 @@ export const moviesLoader = async () => {
     "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=2",
     options
   ).then((res) => res.json());
-  const top = [...top1.results, ...top2.results].slice(0,25);
+  const top = [...top1.results, ...top2.results].slice(0,50);
 
   return { popular, theaters, top };
 };

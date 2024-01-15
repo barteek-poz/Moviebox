@@ -6,7 +6,10 @@ import { MainPage } from "./pages/MainPage/MainPage.jsx";
 import { MoviesPage } from "./pages/MoviesPage/MoviesPage.jsx";
 import { moviesLoader } from "./loaders/moviesLoader.js";
 import { mainPageLoader } from "./loaders/mainPageLoader.js";
-
+import { TVPage } from "./pages/TVPage/TVPage.jsx";
+import { tvShowsLoader } from "./loaders/tvShowsLoader.js";
+import { Streaming } from "./pages/Streaming/Streaming.jsx";
+import { streamingLoader } from "./loaders/streamingLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,16 @@ const router = createBrowserRouter([
     path: "/movies",
     element: <MoviesPage />,
     loader: moviesLoader,
+  },
+  {
+    path: "/tv",
+    element: <TVPage />,
+    loader: tvShowsLoader,
+  },
+  {
+    path: "/streaming",
+    element: <Streaming />,
+    loader: streamingLoader,
   },
 ]);
 

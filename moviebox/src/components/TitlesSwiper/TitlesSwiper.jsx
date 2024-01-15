@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Poster } from "../Poster/Poster";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
@@ -13,9 +13,8 @@ export const TitleSwiper = ({ titlesArr }) => {
       <Swiper
         loop={true}
         slidesPerView={5}
-        centeredSlides={true}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, FreeMode]}
         className="titleSwiper">
         {titlesArr.map((title) => {
           return (
