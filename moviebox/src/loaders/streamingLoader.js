@@ -7,18 +7,26 @@ export const streamingLoader = async () => {
     },
   };
   // popular movies
-  const popularMovies = await Promise.all([
+
+  const res = await Promise.all([
     fetch(
       "https://api.themoviedb.org/3/trending/movie/week?language=en-US&page=1",
       options
-    ).then((res) => res.json()),
+    ),
     fetch(
       "https://api.themoviedb.org/3/trending/movie/week?language=en-US&page=2",
       options
-    ).then((res) => res.json()),
+    ),
   ]);
 
-  return { popularMovies };
+  const data = await Promise.all(
+    res.map((item) => {
+      return item.json();
+    })
+  );
+  const movies = [...data[0].results, ...data[1].results]
+
+  return movies
 };
 
 // naprawic pobieranie danych z serwera i wyswietlanie tylko tytulow z konretnych streamingow

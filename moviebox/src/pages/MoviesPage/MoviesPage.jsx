@@ -6,16 +6,13 @@ import { TitlesSection } from "../../components/TitlesSection/TitlesSection";
 
 export const MoviesPage = () => {
   const loaderData = useLoaderData();
-  const heroTitles = loaderData.popular.slice(0, 5);
-  const popularTitles = loaderData.popular;
-  const inTheaters = loaderData.theaters;
-  const topRated = loaderData.top;
+  const heroTitles = loaderData.popularMovies.slice(0, 5);
   return (
     <MainLayout>
       <Hero titlesArr={heroTitles} />
-      <TitlesSection title="Popular" titlesArr={popularTitles} />
-      <TitlesSection title="In theaters" titlesArr={inTheaters} />
-      <TitlesSection title="Top 50" titlesArr={topRated} />
+      <TitlesSection title="Popular" titlesArr={loaderData.popularMovies} />
+      <TitlesSection title="In theaters" titlesArr={loaderData.theaters} />
+      <TitlesSection title="Top 50" titlesArr={loaderData.topMovies} />
     </MainLayout>
   )
 };

@@ -1,44 +1,70 @@
 export const tvShowsLoader = async () => {
-    const options = {
-      method: "GET",
-      headers: {
-        accept: "application/json",
-        Authorization: import.meta.env.VITE_API_KEY,
-      },
-    };
-    // new episodes
-    const newEpisodes1 = await fetch(
-      "https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=1&timezone=cet",
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: import.meta.env.VITE_API_KEY,
+    },
+  };
+  // new episodes
+  const resEpisodes = await Promise.all([
+    fetch(
+      "https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=1",
       options
-    ).then((res) => res.json());
-    const newEpisodes2 = await fetch(
-      "https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=2&timezone=cet",
+    ),
+    fetch(
+      "https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=2",
       options
-    ).then((res) => res.json());
-    const newEpisodes = [...newEpisodes1.results, ...newEpisodes2.results].slice(0,25);
-  
-    //popular tv shows
-    const popularTV1 = await fetch(
+    ),
+  ]);
+
+  const dataEpisodes = await Promise.all(
+    resEpisodes.map((item) => {
+      return item.json();
+    })
+  );
+  const newEpisodes = [
+    ...dataEpisodes[0].results,
+    ...dataEpisodes[1].results,
+  ].slice(0, 25);
+
+  //popular tv shows
+  const resTV = await Promise.all([
+    fetch(
       "https://api.themoviedb.org/3/trending/tv/week?language=en-US&page=1",
       options
-    ).then((res) => res.json());
-    const popularTV2 = await fetch(
+    ),
+    fetch(
       "https://api.themoviedb.org/3/trending/tv/week?language=en-US&page=2",
       options
-    ).then((res) => res.json());
-    const popularTV = [...popularTV1.results, ...popularTV2.results].slice(0,25);
-  
-    //top25
-    const top1 = await fetch(
+    ),
+  ]);
+
+  const dataTV = await Promise.all(
+    resTV.map((item) => {
+      return item.json();
+    })
+  );
+  const popularTV = [...dataTV[0].results, ...dataTV[1].results].slice(0, 25);
+
+  //top25
+  const resTop = await Promise.all([
+    fetch(
       "https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1",
       options
-    ).then((res) => res.json());
-    const top2 = await fetch(
+    ),
+    fetch(
       "https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=2",
       options
-    ).then((res) => res.json());
-    const top = [...top1.results, ...top2.results].slice(0,50);
-  
-    return { newEpisodes, popularTV, top };
-  };
-  
+    ),
+  ]);
+
+  const dataTop = await Promise.all(
+    resTop.map((item) => {
+      return item.json();
+    })
+  );
+  const topTV = [...dataTop[0].results, ...dataTop[1].results].slice(0, 25);
+
+  return { newEpisodes, popularTV, topTV };
+};
