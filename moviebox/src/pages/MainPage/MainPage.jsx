@@ -7,7 +7,6 @@ import { TitlesSection } from "../../components/TitlesSection/TitlesSection";
 export const MainPage = () => {
   const loaderData = useLoaderData();
   const heroTitles = loaderData.popularMain.slice(0, 5);
-  console.log(loaderData);
   return (
     <MainLayout>
       <Hero titlesArr={heroTitles} />
