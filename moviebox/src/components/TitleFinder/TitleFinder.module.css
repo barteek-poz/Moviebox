@@ -1,0 +1,45 @@
+.finderHeader {
+    margin-left: 50px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 50px;
+}
+
+.select {
+  height: 36px;
+  border-radius: 10px;
+  color:var(--color-main);
+}
+
+.btn {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4rem;
+  color: var(--color-main);
+  background-color: var(--color-white);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.finder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.icon {
+  background-color: transparent;
+  border: none;
+}
