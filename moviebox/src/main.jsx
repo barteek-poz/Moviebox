@@ -10,6 +10,8 @@ import { TVPage } from "./pages/TVPage/TVPage.jsx";
 import { tvShowsLoader } from "./loaders/tvShowsLoader.js";
 import { Streaming } from "./pages/Streaming/Streaming.jsx";
 import { streamingLoader } from "./loaders/streamingLoader.js";
+import { Watchlist } from "./pages/Watchlist/Watchlist.jsx";
+import { watchlistLoader } from "./loaders/watchlistLoader.js";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
     path: "/streaming",
     element: <Streaming />,
     loader: streamingLoader,
+  },
+  {
+    path: "/watchlist",
+    element: <Watchlist/>,
+    loader: watchlistLoader,
   },
 ]);
 

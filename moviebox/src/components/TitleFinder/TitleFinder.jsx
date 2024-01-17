@@ -9,14 +9,14 @@ export const TitleFinder = () => {
     <CenteredContent>
       <h2 className={styles.finderHeader}>Don`t know what to watch? Let us help you!</h2>
       <Form className={styles.form}>
-        <select className={styles.select}>
+        <select className={styles.select} name='media' id="name">
           <option selected disabled value="default">
             Movie or TV Show?
           </option>
           <option value="movie">Movie</option>
           <option value="tv">TV Show</option>
         </select>
-        <select className={styles.select}>
+        <select className={styles.select} name='streaming' id="streaming">
           <option selected disabled value="default">
             Choose your streaming company
           </option>
