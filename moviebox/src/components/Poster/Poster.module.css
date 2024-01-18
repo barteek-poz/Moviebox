@@ -9,15 +9,19 @@
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-
+  position: relative;
 }
 
-.infoBox {  
+.infoBox {
+  position: absolute;
   width: 100%;
-  background-color: var(--color-black);
+  background-color: var(--color-main);
   color: var(--color-white);
   font-size: 1.6rem;
   padding: 15px;
+  animation-name: slidein;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
 }
 
 .firstRow,
@@ -50,4 +54,14 @@
 .secondRow img {
   width: 2rem;
   height: 2rem;
+}
+
+@keyframes slidein {
+  0% {
+    height: 0;
+  }
+  
+  100% {
+   height: 80%; 
+  }
 }

@@ -1,7 +1,7 @@
 .heroImg {
     height: 60rem;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     align-items: center;
 }
@@ -20,6 +20,10 @@
     font-size: 3rem;
     font-weight: 700;
     color: var(--color-white);
+   
+}
+.heroBox a {
+    text-decoration: none;
 }
 
 .heroBox div {

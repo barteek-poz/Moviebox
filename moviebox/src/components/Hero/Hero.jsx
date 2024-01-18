@@ -28,6 +28,7 @@ export const Hero = ({titlesArr}) => {
           return (
             <SwiperSlide key={Math.random()}>
               <HeroBox
+              id={title.id}
                 title={title.title}
                 name={title.name}
                 release_date={title.release_date}
