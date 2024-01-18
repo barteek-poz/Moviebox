@@ -1,0 +1,76 @@
+.titleBox {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.posterBox {
+  min-width: 40rem;
+  height: 60rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.titleInfo {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-white);
+}
+.row,
+.rowCast,
+.rowRating {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+.rowCast {
+  gap: 10px;
+}
+.rowCast span {
+  font-weight: 700;
+}
+.rowRating {
+  align-items: center;
+}
+.rowRating img {
+  width: 3rem;
+  height: 3rem;
+}
+.rating {
+  font-size: 3rem;
+  margin-left: -1rem;
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.btnAdd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 300;
+  border: none;
+}
+
+.btnAdd img {
+  width: 20px;
+  height: 20px;
+}
+
+.genre {
+  font-size: 1.6rem;
+  border: 1px solid var(--color-white);
+  padding: 6px;
+  border-radius: 10px;
+}

@@ -12,11 +12,12 @@ import { Streaming } from "./pages/Streaming/Streaming.jsx";
 import { streamingLoader } from "./loaders/streamingLoader.js";
 import { Watchlist } from "./pages/Watchlist/Watchlist.jsx";
 import { watchlistLoader } from "./loaders/watchlistLoader.js";
+import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage />,
+    element: <TitlePage />,
     loader: mainPageLoader,
   },
   {
