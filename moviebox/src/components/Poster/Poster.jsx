@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { overviewFormat } from "../../helpers/overviewFormat";
-export const Poster = ({ title,name, vote_average, overview, poster }) => {
+export const Poster = ({ title,name, vote_average, overview, poster, media, id }) => {
   const [showInfo, setShowInfo] = useState(false)
   return (
-    <Link
+    <Link to={`${media}/${id}`}
       className={styles.background}
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${poster})`,
@@ -18,7 +18,7 @@ export const Poster = ({ title,name, vote_average, overview, poster }) => {
      {showInfo && <div className={styles.infoBox}>
         <div className={styles.firstRow}>
           <span>{title || name}</span>
-          <button>
+          <button className={styles.addBtn}>
             <img src={ADD_ICON} alt="add-icon" />
           </button>
         </div>

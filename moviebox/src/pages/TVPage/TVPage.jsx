@@ -11,9 +11,9 @@ export const TVPage = () => {
   return (
     <MainLayout>
       <Hero titlesArr={heroTitles} />
-      <TitlesSection title="New episodes" titlesArr={loaderData.newEpisodes} />
+      <TitlesSection title="New episodes" titlesArr={loaderData.newEpisodes} media='tv'/>
       <TitlesSection title="Popular" titlesArr={loaderData.popularTV} />
-      <TitlesSection title="Top 50" titlesArr={loaderData.topTV} />
+      <TitlesSection title="Top 50" titlesArr={loaderData.topTV} media='tv' />
     </MainLayout>
   );
 };

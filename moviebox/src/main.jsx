@@ -13,11 +13,12 @@ import { streamingLoader } from "./loaders/streamingLoader.js";
 import { Watchlist } from "./pages/Watchlist/Watchlist.jsx";
 import { watchlistLoader } from "./loaders/watchlistLoader.js";
 import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
+import { titleLoader } from "./loaders/titleLoader.js";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <TitlePage />,
+    element: <MainPage />,
     loader: mainPageLoader,
   },
   {
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
     path: "/watchlist",
     element: <Watchlist/>,
     loader: watchlistLoader,
+  },
+  {
+    path: ":category?/:media/:titleId",
+    element: <TitlePage/>,
+    loader: ({params}) => {
+      
+      return titleLoader(params)
+    }
   },
 ]);
 

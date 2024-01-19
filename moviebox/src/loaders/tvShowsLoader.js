@@ -23,6 +23,7 @@ export const tvShowsLoader = async () => {
       return item.json();
     })
   );
+  
   const newEpisodes = [
     ...dataEpisodes[0].results,
     ...dataEpisodes[1].results,

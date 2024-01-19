@@ -11,8 +11,8 @@ export const MoviesPage = () => {
     <MainLayout>
       <Hero titlesArr={heroTitles} />
       <TitlesSection title="Popular" titlesArr={loaderData.popularMovies} />
-      <TitlesSection title="In theaters" titlesArr={loaderData.theaters} />
-      <TitlesSection title="Top 50" titlesArr={loaderData.topMovies} />
+      <TitlesSection title="In theaters" titlesArr={loaderData.theaters} media='movie'/>
+      <TitlesSection title="Top 50" titlesArr={loaderData.topMovies} media='movie'/>
     </MainLayout>
   )
 };

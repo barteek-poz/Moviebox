@@ -6,7 +6,7 @@ export const TitlesSection = (props) => {
     <CenteredContent>
       <div className={styles.titles}>
         <h2>{props.title}</h2>
-        <TitleSwiper titlesArr={props.titlesArr} />
+        <TitleSwiper titlesArr={props.titlesArr} media={props.media} />
       </div>
     </CenteredContent>
   );

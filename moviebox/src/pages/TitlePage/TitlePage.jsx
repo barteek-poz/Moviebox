@@ -4,15 +4,18 @@ import POSTER from "../../assets/godfather.jpeg";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
 import styles from "../TitlePage/TitlePage.module.css";
+import { useLoaderData } from "react-router-dom";
 
 export const TitlePage = () => {
+  const loaderData = useLoaderData()
+  console.log(loaderData)
   return (
     <MainLayout>
       <CenteredContent>
         <div className={styles.titleBox}>
-          <div className={styles.posterBox} style={{backgroundImage: `url(${POSTER})`}}>
-           
-          </div>
+          <div
+            className={styles.posterBox}
+            style={{ backgroundImage: `url(https://image.tmdb.org/t/p/original/${loaderData.details.poster_path})` }}></div>
           <div className={styles.titleInfo}>
             <div className={styles.titleRow}>
               <h1>The dark knight</h1>
@@ -55,6 +58,10 @@ export const TitlePage = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <h2>Where to watch?</h2>
+          <div className={styles.streaming}></div>
         </div>
       </CenteredContent>
     </MainLayout>
