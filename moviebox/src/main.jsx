@@ -38,16 +38,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/watchlist",
-    element: <Watchlist/>,
+    element: <Watchlist />,
     loader: watchlistLoader,
   },
   {
     path: ":category?/:media/:titleId",
-    element: <TitlePage/>,
-    loader: ({params}) => {
-      
-      return titleLoader(params)
-    }
+    element: <TitlePage />,
+    loader: ({ params }) => {
+      return titleLoader(params);
+    },
   },
 ]);
 

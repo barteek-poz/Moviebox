@@ -30,6 +30,7 @@ export const titleLoader = async (params) => {
       details: titleData[0],
       cast: titleData[1],
       streaming: titleData[2].results.PL,
+      media: 'Movie'
     };
   } else if (params.media === "tv") {
     const titlesFetch = await Promise.all([
@@ -55,6 +56,7 @@ export const titleLoader = async (params) => {
       details: titleData[0],
       cast: titleData[1],
       streaming: titleData[2].results.PL,
+      media: 'TV Show'
     };
   }
 };
