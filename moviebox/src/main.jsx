@@ -15,6 +15,7 @@ import { watchlistLoader } from "./loaders/watchlistLoader.js";
 import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

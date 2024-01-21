@@ -8,10 +8,12 @@ export const directorFormat = (date) => {
 
   if (director.length > 0) {
     return director[0].name;
-  } else {
+  } else if(producerArr.length >0) {
    const a = producerArr.sort((a, b) => {
       return b.popularity - a.popularity;
     });
     return a[0].name
+  } else {
+    return 'Not specified'
   }
 };

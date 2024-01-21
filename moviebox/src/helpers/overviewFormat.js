@@ -1,7 +1,7 @@
 export const overviewFormat = (overview) => {
-    if(overview.length <= 130) {
+    if(overview.length <= 200) {
         return overview
     } else {
-        return overview.slice(0,130)+'...'
+        return overview.slice(0,200)+'...'
     }
 };

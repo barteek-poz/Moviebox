@@ -4,7 +4,6 @@ import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
 import search from "../../assets/search.svg";
 
-
 //naprawic stan active linkow
 export const Navigation = () => {
   return (
@@ -17,38 +16,30 @@ export const Navigation = () => {
           <div className={styles.navLinks}>
             <NavLink
               to="/movies"
-              className={({ isActive }) => {
-                return isActive
-                  ? `${styles.active, styles.navLink}`
-                  : `${styles.navLink}`;
-              }}>
+              className={({ isActive }) =>
+                isActive ? `${styles.active}` : `${styles.navLink}`
+              }>
               Movies
             </NavLink>
             <NavLink
               to="/tv"
-              className={({ isActive }) => {
-                return isActive
-                  ? `${styles.active, styles.navLink}`
-                  : `${styles.navLink}`;
-              }}>
+              className={({ isActive }) =>
+                isActive ? `${styles.active}` : `${styles.navLink}`
+              }>
               TV Shows
             </NavLink>
             <NavLink
               to="/streaming"
-              className={({ isActive }) => {
-                return isActive
-                  ? `${styles.active, styles.navLink}`
-                  : `${styles.navLink}`;
-              }}>
+              className={({ isActive }) =>
+                isActive ? `${styles.active}` : `${styles.navLink}`
+              }>
               Streaming
             </NavLink>
             <NavLink
               to="/watchlist"
-              className={({ isActive }) => {
-                return isActive
-                  ? `${styles.active, styles.navLink}`
-                  : `${styles.navLink}`;
-              }}>
+              className={({ isActive }) =>
+                isActive ? `${styles.active}` : `${styles.navLink}`
+              }>
               Watchlist
             </NavLink>
 

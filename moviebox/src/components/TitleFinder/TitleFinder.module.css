@@ -6,9 +6,8 @@
   align-items: center;
   gap: 2rem;
   margin-left: 50px;
+  margin-bottom: 6rem;
 }
-
-
 
 .btn {
   font-size: 1.6rem;
@@ -33,6 +32,7 @@
   align-items: center;
   justify-content: center;
   gap: 7rem;
+  
 }
 
 .icon {

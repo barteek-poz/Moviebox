@@ -4,7 +4,6 @@ import { MainLayout } from "../../components/MainLayout/MainLayout";
 import { TitlesSection } from "../../components/TitlesSection/TitlesSection";
 import { TitleFinder } from "../../components/TitleFinder/TitleFinder";
 
-
 export const Streaming = () => {
   const loaderData = useLoaderData();
   const heroTitles = [
@@ -18,7 +17,6 @@ export const Streaming = () => {
       <TitlesSection title="Popular movies" titlesArr={loaderData.movieList} />
       <TitlesSection title="Popular TV shows" titlesArr={loaderData.tvList} />
       <TitleFinder />
-   
     </MainLayout>
   );
 };

@@ -107,7 +107,7 @@ export const TitlePage = () => {
             </div>
             <div className={styles.rowIcons}>
               <span>Buy:</span>
-              {loaderData.buy && loaderData.streaming.buy ? (
+              {loaderData.streaming && loaderData.streaming.buy ? (
                 loaderData.streaming.buy.map((company) => {
                   return (
                     <img
