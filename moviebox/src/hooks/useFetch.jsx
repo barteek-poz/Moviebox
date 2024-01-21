@@ -15,7 +15,7 @@ const useFetch = (url) => {
       setData(resData);
     };
     dataFetch();
-  }, [url, options]);
+  }, [url]);
 
   return { data };
 };

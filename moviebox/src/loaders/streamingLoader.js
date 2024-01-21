@@ -36,7 +36,8 @@ export const streamingLoader = async () => {
   );
 
   movieProviders.forEach((movie) => {
-    if (Object.keys(movie.results).length !== 0) {
+    if (movie.results.PL) {
+      
       availableMovies.push(movie.id);
     }
   });
@@ -75,7 +76,7 @@ export const streamingLoader = async () => {
   );
 
   tvProviders.forEach((tv) => {
-    if (Object.keys(tv.results).length !== 0) {
+    if (tv.results.PL) {
       availableTV.push(tv.id);
     }
   });
