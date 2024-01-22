@@ -5,45 +5,32 @@ import { ratingFormat } from "../../helpers/ratingFormat";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
 import styles from "../PosterBig/PosterBig.module.css";
-import poster from '../../assets/godfather.jpeg'
-
-export const PosterBig = ({
-  title,
-  name,
-  release_date,
-  first_air_date,
-  media_type,
-  vote_average,
-  overview,
-}) => {
+export const PosterBig = ({ title }) => {
   return (
     <div className={styles.posterBox}>
-      <Link className={styles.poster} style={{
-        backgroundImage: `url(${poster})`,
-      }}/>
+      <Link
+        className={styles.poster}
+        style={{
+          backgroundImage: `url(https://image.tmdb.org/t/p/original/${title.poster_path})`,
+        }}
+      />
       <div className={styles.posterInfo}>
-      <button className={styles.addBtn}>
-            <img src={ADD_ICON} alt="add-icon" />
-          </button>
-        {/* <span>{title || name}</span> */}
-        <span>Ojciec Chrzestny</span>
+        <button className={styles.addBtn}>
+          <img src={ADD_ICON} alt="add-icon" />
+        </button>
+        <span>{title.title || title.name}</span>
+
         <div>
-          {/* <p>{dateFormat(release_date) || dateFormat(first_air_date)}</p>
-          <p>{mediaType(media_type)}</p> */}
-          <p>1979</p>
-          <p>Movie</p>
+          <p>
+            {dateFormat(title.release_date) || dateFormat(title.first_air_date)}
+          </p>
+          <p>{mediaType(title.media_type)}</p>
         </div>
         <div>
           <img src={STAR_ICON} alt="star-icon" />
-          <p className={styles.points}>8.0</p>
-          {/* <p className={styles.points}>{ratingFormat(vote_average)}</p> */}
+          <p className={styles.points}>{ratingFormat(title.vote_average)}</p>
         </div>
-        {/* <p>{overview}</p> */}
-        <p>
-          Don Vito Corleone, head of a mafia family, decides to hand over his
-          empire to his youngest son Michael. However, his decision
-          unintentionally puts the lives of his loved ones in grave danger.
-        </p>
+        <p>{title.overview}</p>
       </div>
     </div>
   );
