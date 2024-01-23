@@ -39,6 +39,7 @@ h3 {
 }
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 button {
   font-family: inherit;

@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
-import { dateFormat } from "../../helpers/dateFormat";
-import { mediaType } from "../../helpers/mediaType";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
 import styles from "../PosterBig/PosterBig.module.css";
-export const PosterBig = ({ title }) => {
+import { overviewFormat } from "../../helpers/overviewFormat";
+import { genreType } from "../../helpers/genreType";
+
+export const PosterBig = ({ title, media }) => {
+  const genres = genreType(title.genre_ids);
+
   return (
     <div className={styles.posterBox}>
       <Link
+        to={`${media}/${title.id}`}
         className={styles.poster}
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${title.poster_path})`,
@@ -18,19 +22,24 @@ export const PosterBig = ({ title }) => {
         <button className={styles.addBtn}>
           <img src={ADD_ICON} alt="add-icon" />
         </button>
-        <span>{title.title || title.name}</span>
+        <Link to={`${title.media_type}/${title.id}`}>
+          <span>{title.title || title.name}</span>
+        </Link>
 
         <div>
-          <p>
-            {dateFormat(title.release_date) || dateFormat(title.first_air_date)}
-          </p>
-          <p>{mediaType(title.media_type)}</p>
+          {genres.map((genre) => {
+            return (
+              <p key={genre.id} className={styles.genre}>
+                {genre.name}
+              </p>
+            );
+          })}
         </div>
         <div>
           <img src={STAR_ICON} alt="star-icon" />
           <p className={styles.points}>{ratingFormat(title.vote_average)}</p>
         </div>
-        <p>{title.overview}</p>
+        <p>{overviewFormat(title.overview)}</p>
       </div>
     </div>
   );

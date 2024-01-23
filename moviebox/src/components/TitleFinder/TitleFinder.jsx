@@ -7,24 +7,46 @@ import { useState } from "react";
 import { useFindTitle } from "../../hooks/useFindTitle";
 
 export const TitleFinder = () => {
-  const [titleFound, setTitleFound] = useState();
-  const [titlePage, setTitlePage] = useState(1);
-  const data = useFindTitle("movie", titlePage);
+  const [searchPage, setSearchPage] = useState(0);
+  const [titleMedia, setTitleMedia] = useState("default");
+  const [isError, setIsError] = useState(false);
+  const [isTouched, setIsTouched] = useState(false);
+
+  const titleData = useFindTitle(titleMedia, searchPage);
+
   const titleFindHandler = () => {
-    setTitleFound(true);
-    setTitlePage((prevPage) => {
+    setIsTouched(false);
+    setSearchPage((prevPage) => {
       return prevPage + 1;
     });
+    setIsTouched(true);
+    setIsError(false);
   };
 
+  if (isTouched && titleMedia === "default") {
+    setSearchPage(0);
+    setIsError(true);
+    setIsTouched(false);
+  }
+
+  const selectHandler = (e) => {
+    setTitleMedia(e.target.value);
+    setIsError(false);
+    setSearchPage(0);
+  };
   return (
     <CenteredContent>
       <h2 className={styles.finderHeader}>
         Don`t know what to watch? Let us help you!
       </h2>
       <Form className={styles.form}>
-        <select className={styles.select} name="media" id="name">
-          <option selected disabled value="default">
+        <select
+          value={titleMedia}
+          className={styles.select}
+          name="media"
+          id="name"
+          onChange={selectHandler}>
+          <option disabled value="default">
             Movie or TV Show?
           </option>
           <option value="movie">Movie</option>
@@ -33,11 +55,16 @@ export const TitleFinder = () => {
         <button className={styles.btn} onClick={titleFindHandler}>
           Search
         </button>
+        {isError && (
+          <p className={styles.error}>
+            Please, choose between Movie and TV Show
+          </p>
+        )}
       </Form>
-      {titleFound && (
+      {titleData && (
         <div className={styles.finder}>
-          <PosterBig title={data} />
-          <button className={styles.icon}>
+          <PosterBig title={titleData} media={titleMedia} />
+          <button className={styles.icon} onClick={titleFindHandler}>
             <img src={ARROW_ICON} alt="arrow" />
           </button>
         </div>
