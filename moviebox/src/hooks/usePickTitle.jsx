@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-export const useFindTitle = (media, page) => {
+export const usePickTitle = (media, page) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {

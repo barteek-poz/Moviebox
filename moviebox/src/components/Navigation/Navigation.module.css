@@ -44,7 +44,17 @@
 }
 
 .active {
-  
-    border-bottom: 2px solid white;
-    
+    border-bottom: 2px solid white;   
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchResults {
+  position: absolute;
+  top: 4rem;
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
 }

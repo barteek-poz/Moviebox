@@ -2,10 +2,14 @@ import styles from "../Navigation/Navigation.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
-import search from "../../assets/search.svg";
+import { useNavSearch } from "../../hooks/useNavSearch";
+import { useState } from "react";
+import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 
 //naprawic stan active linkow
 export const Navigation = () => {
+  const [inputValue, setInputValue] = useState("");
+  const searchedTitles = useNavSearch(inputValue);
   return (
     <div className={styles.navBackground}>
       <CenteredContent>
@@ -43,14 +47,19 @@ export const Navigation = () => {
               Watchlist
             </NavLink>
 
-            <div>
-              <img src={search} alt="search-icon" className={styles.navIcon} />
+            <div className={styles.searchBox}>
               <input
+                onChange={(e) => setInputValue(e.target.value)}
                 className={styles.navInput}
                 type="text"
                 name="search"
                 placeholder="Search"
               />
+              <div className={styles.searchResults}>
+                {searchedTitles && searchedTitles.map((title) => {
+                  return <SearchedTitle key={title.id} titleData={title}/>;
+                })}
+              </div>
             </div>
           </div>
         </nav>

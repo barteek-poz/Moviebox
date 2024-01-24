@@ -4,7 +4,7 @@ import { Form } from "react-router-dom";
 import { PosterBig } from "../PosterBig/PosterBig";
 import ARROW_ICON from "../../assets/arrow.svg";
 import { useState } from "react";
-import { useFindTitle } from "../../hooks/useFindTitle";
+import { usePickTitle } from "../../hooks/usePickTitle";
 
 export const TitleFinder = () => {
   const [searchPage, setSearchPage] = useState(0);
@@ -12,7 +12,7 @@ export const TitleFinder = () => {
   const [isError, setIsError] = useState(false);
   const [isTouched, setIsTouched] = useState(false);
 
-  const titleData = useFindTitle(titleMedia, searchPage);
+  const titleData = usePickTitle(titleMedia, searchPage);
 
   const titleFindHandler = () => {
     setIsTouched(false);
