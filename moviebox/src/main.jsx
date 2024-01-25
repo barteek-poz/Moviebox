@@ -14,6 +14,8 @@ import { Watchlist } from "./pages/Watchlist/Watchlist.jsx";
 import { watchlistLoader } from "./loaders/watchlistLoader.js";
 import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
+import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -48,6 +50,11 @@ const router = createBrowserRouter([
     loader: ({ params }) => {
       return titleLoader(params);
     },
+  },
+  {
+    path: "/search",
+    element: <SearchPage />,
+  
   },
 ]);
 

@@ -12,7 +12,7 @@ export const MainPage = () => {
     <MainLayout>
       <Hero titlesArr={heroTitles} />
       <TitlesSection title="Popular" titlesArr={loaderData.popularMain} />
-      <TitlesSection title="In theaters" titlesArr={loaderData.theatersMain} />
+      <TitlesSection title="In theaters" titlesArr={loaderData.theatersMain} media={'movie'}/>
     </MainLayout>
   );
 };

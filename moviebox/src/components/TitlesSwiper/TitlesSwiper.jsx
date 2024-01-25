@@ -20,13 +20,7 @@ export const TitleSwiper = ({ titlesArr, media }) => {
           return (
             <SwiperSlide key={Math.random()}>
               <Poster
-              id={title.id}
-              media={title.media_type || media}
-                title={title.title}
-                name = {title.name}
-                vote_average={title.vote_average}
-                overview={title.overview}
-                poster={title.poster_path}
+              titleData={title} media={media}
               />
             </SwiperSlide>
           );
