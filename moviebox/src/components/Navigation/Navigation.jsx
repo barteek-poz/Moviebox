@@ -1,5 +1,5 @@
 import styles from "../Navigation/Navigation.module.css";
-import { Link, NavLink, Form, useNavigate, useSearchParams} from "react-router-dom";
+import { Link, NavLink,  useNavigate} from "react-router-dom";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
 import { useNavSearch } from "../../hooks/useNavSearch";
@@ -9,13 +9,16 @@ import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 //naprawic stan active linkow
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
-  const [searchParams, setSearchParams] = useSearchParams()
   const searchedTitles = useNavSearch(inputValue);
   const navigate = useNavigate()
-  const submitHandler = () => {
-    setSearchParams({search: inputValue})
-    navigate(`search/${searchParams}`)
-  }
+ 
+  const searchHandler = (event) => {
+    if (event.key === "Enter" && inputValue.length > 0) {
+        navigate(`/search/${inputValue}`);
+        
+    }
+};
+
   return (
     <div className={styles.navBackground}>
       <CenteredContent>
@@ -52,7 +55,7 @@ export const Navigation = () => {
               }>
               Watchlist
             </NavLink>
-            <Form action='/search' onSubmit={submitHandler}>
+            
               <div className={styles.searchBox}>
                 <input
                   onChange={(e) => setInputValue(e.target.value)}
@@ -60,6 +63,7 @@ export const Navigation = () => {
                   type="text"
                   name="search"
                   placeholder="Search"
+                  onKeyUp={searchHandler}
                   
                 />
                 <div className={styles.searchResults}>
@@ -69,7 +73,7 @@ export const Navigation = () => {
                     })}
                 </div>
               </div>
-            </Form>
+            
           </div>
         </nav>
       </CenteredContent>

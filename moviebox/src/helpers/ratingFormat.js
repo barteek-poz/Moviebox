@@ -1,3 +1,5 @@
 export const ratingFormat = (rate) => {
-    return rate.toFixed(1)
-}
+  if (rate) {
+    return rate.toFixed(1);
+  }
+};

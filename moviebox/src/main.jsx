@@ -15,6 +15,7 @@ import { watchlistLoader } from "./loaders/watchlistLoader.js";
 import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
 import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
+import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
 
 
 
@@ -45,15 +46,18 @@ const router = createBrowserRouter([
     loader: watchlistLoader,
   },
   {
-    path: ":category?/:media/:titleId",
+    path: ":category?/:search?/:media/:titleId",
     element: <TitlePage />,
     loader: ({ params }) => {
       return titleLoader(params);
     },
   },
   {
-    path: "/search",
+    path: "/search/:param",
     element: <SearchPage />,
+    loader: ({params}) => {
+      return searchTitleLoader(params)
+    }
   
   },
 ]);

@@ -1,21 +1,21 @@
-import { useSearchParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { MainLayout } from "../../components/MainLayout/MainLayout";
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
 import { Poster } from "../../components/Poster/Poster";
-import styles from '../SearchPage/SearchPage.module.css'
-import { useNavSearch } from "../../hooks/useNavSearch";
+import styles from "../SearchPage/SearchPage.module.css";
 export const SearchPage = () => {
-  const [searchParams, setSearchParams] = useSearchParams()
-  const param = searchParams.get('search')
-  const data = useNavSearch(param)
-  
+  const loaderData = useLoaderData();
+  const params = useParams();
+console.log(loaderData)
   return (
     <MainLayout>
       <CenteredContent>
+        <h2>Search results for `{params.param}`</h2>
         <div className={styles.searchList}>
-          {data && data.map((title) => {
-            return <Poster key={title.id} titleData={title} />;
-          })}
+          {loaderData.length ?
+            loaderData.map((title) => {
+              return <Poster key={title.id} titleData={title} />;
+            }): <h3>Sorry, we haven`t found any results matching `{params.param}`</h3>}
         </div>
       </CenteredContent>
     </MainLayout>
