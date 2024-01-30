@@ -25,36 +25,44 @@
   font-size: 2rem;
   font-weight: 500;
   color: var(--color-white);
-  padding: 2px;
+  padding: 2px 8px;
   border: 2px solid transparent;
   transition: 0.4s;
 }
 .active {
   border-radius: 10px;
-  background-color: var(--color-white);
+  background-color: var(--color-yellow);
   color: var(--color-black);
 }
 .navLink:hover,
 .navLink:focus {
-  border-bottom: 2px solid var(--color-white);
+  color: var(--color-yellow);
+  border-bottom: 2px solid var(--color-yellow);
   scale: 1.05;
 }
 .navInput {
   font-size: 1.8rem;
   font-family: inherit;
   font-weight: 300;
-  border: none;
-  border-radius: 10px;
-  padding-left: 40px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--color-yellow);
+  color: var(--color-white);
+  padding-left: 10px;
   width: 26.5rem;
   height: 3rem;
-  background-image: url("../../assets/search.svg");
-  background-repeat: no-repeat;
-  background-position: 10px;
+  background-color: transparent;
+}
+
+
+
+.navInput:focus {
+  outline: none;
+  border: 1px solid var(--color-yellow);
+  border-radius: 10px;
 }
 
 .active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--color-yellow);
 }
 
 .searchBox {
@@ -68,3 +76,4 @@
   border-radius: 10px;
   overflow: hidden;
 }
+

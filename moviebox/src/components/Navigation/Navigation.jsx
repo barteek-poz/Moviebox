@@ -1,5 +1,5 @@
 import styles from "../Navigation/Navigation.module.css";
-import { Link, NavLink,  useNavigate} from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
 import { useNavSearch } from "../../hooks/useNavSearch";
@@ -10,14 +10,13 @@ import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
   const searchedTitles = useNavSearch(inputValue);
-  const navigate = useNavigate()
- 
+  const navigate = useNavigate();
+
   const searchHandler = (event) => {
     if (event.key === "Enter" && inputValue.length > 0) {
-        navigate(`/search/${inputValue}`);
-        
+      navigate(`/search/${inputValue}`);
     }
-};
+  };
 
   return (
     <div className={styles.navBackground}>
@@ -55,25 +54,23 @@ export const Navigation = () => {
               }>
               Watchlist
             </NavLink>
-            
-              <div className={styles.searchBox}>
-                <input
-                  onChange={(e) => setInputValue(e.target.value)}
-                  className={styles.navInput}
-                  type="text"
-                  name="search"
-                  placeholder="Search"
-                  onKeyUp={searchHandler}
-                  
-                />
-                <div className={styles.searchResults}>
-                  {searchedTitles &&
-                    searchedTitles.slice(0,4).map((title) => {
-                      return <SearchedTitle key={title.id} titleData={title} />;
-                    })}
-                </div>
+
+            <div className={styles.searchBox}>
+              <input
+                onChange={(e) => setInputValue(e.target.value)}
+                className={styles.navInput}
+                type="text"
+                name="search"
+                placeholder="Search"
+                onKeyUp={searchHandler}
+              />
+              <div className={styles.searchResults}>
+                {searchedTitles && 
+                  searchedTitles.slice(0, 4).map((title) => {
+                    return <SearchedTitle key={title.id} titleData={title} />;
+                  })}
               </div>
-            
+            </div>
           </div>
         </nav>
       </CenteredContent>

@@ -18,9 +18,10 @@ export const Hero = ({titlesArr}) => {
           disableOnInteraction: false,
         }}
         cssMode={true}
-        navigation={false}
+        navigation={true}
         mousewheel={true}
         keyboard={true}
+  
         loop={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="heroSwiper">

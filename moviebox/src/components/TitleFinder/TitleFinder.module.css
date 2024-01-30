@@ -14,18 +14,11 @@
   display: flex;
   align-items: flex-end;
   gap: 0.4rem;
-  color: var(--color-main);
-  background-color: var(--color-white);
   border: 1px solid transparent;
   border-radius: 10px;
   padding: 0.6rem;
 }
 
-.btn:hover {
-  background-color: transparent;
-  color: var(--color-white);
-  border-color: var(--color-white);
-}
 
 .finder {
   display: flex;

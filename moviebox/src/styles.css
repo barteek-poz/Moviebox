@@ -3,7 +3,9 @@
   --color-black: rgba(0, 0, 0, 1);
   --color-blur: rgba(0, 0, 0, 0.5);
   --color-white: rgba(255, 255, 255, 1);
+  --color-yellow: rgba(255, 199, 0);
   --main-font: "Roboto", sans-serif;
+ 
 }
 
 * {
@@ -41,16 +43,30 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+  border: 1px solid var(--color-yellow);
+  border-radius: 10px;
+}
 button {
   font-family: inherit;
+  color: var(--color-black);
+  background-color: var(--color-yellow);
   cursor: pointer;
   transition: .3s;
+}
+button:hover, button:focus, button:hover svg {
+   background-color: var(--color-white);
+  color: var(--color-black);
+  fill: var(--color-white);
 }
 
 select {
   height: 36px;
   border-radius: 10px;
+  border: none;
   color:var(--color-main);
+  background-color: var(--color-yellow);
 }
 
 /* swiper styles */
@@ -58,6 +74,7 @@ select {
 .swiper-button-prev::after {
   color: var(--color-white);
 }
+
 
 .titleSwiper {
     position: static!important;
@@ -78,3 +95,4 @@ select {
     justify-self: end;
     margin-left: 100px;
   }
+
