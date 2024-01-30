@@ -8,11 +8,11 @@ import { dateFormat } from "../../helpers/dateFormat";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { directorFormat } from "../../helpers/directorFormat";
 import { runtimeFormat } from "../../helpers/runtimeFormat";
-
+import NO_POSTER from '../../assets/no_poster.png'
 
 export const TitlePage = () => {
   const loaderData = useLoaderData();
-  const params = useParams()
+  const params = useParams();
   const cast = loaderData.cast.cast
     .filter((actor) => {
       if (actor.known_for_department === "Acting") {
@@ -20,7 +20,7 @@ export const TitlePage = () => {
       }
     })
     .slice(0, 3);
-  console.log(loaderData)
+ 
   return (
     <MainLayout>
       <CenteredContent>
@@ -28,17 +28,25 @@ export const TitlePage = () => {
           <div
             className={styles.posterBox}
             style={{
-              backgroundImage: `url(https://image.tmdb.org/t/p/original/${loaderData.details.poster_path})`,
+              backgroundImage: loaderData.details.poster_path
+                ? `url(https://image.tmdb.org/t/p/original/${loaderData.details.poster_path})`
+                : `url(${NO_POSTER})`,
             }}></div>
+        
           <div className={styles.titleInfo}>
             <div className={styles.titleRow}>
-              <h1>{loaderData.details.original_title || loaderData.details.name}</h1>
+              <h1>
+                {loaderData.details.original_title || loaderData.details.name}
+              </h1>
               <button className={styles.btnAdd}>
                 Add to watchlist <img src={ADD_ICON} alt="add-icon" />
               </button>
             </div>
             <div className={styles.row}>
-              <p>{dateFormat(loaderData.details.release_date) ||dateFormat(loaderData.details.first_air_date) }</p>
+              <p>
+                {dateFormat(loaderData.details.release_date) ||
+                  dateFormat(loaderData.details.first_air_date)}
+              </p>
               <p>{loaderData.media}</p>
               <p>{runtimeFormat(loaderData.details)}</p>
             </div>
@@ -47,7 +55,7 @@ export const TitlePage = () => {
               <p className={styles.rating}>
                 {ratingFormat(loaderData.details.vote_average)}
               </p>
-              <p>{loaderData.details.vote_count + ' votes'}</p>
+              <p>{loaderData.details.vote_count + " votes"}</p>
             </div>
             <div className={styles.row}>
               {loaderData.details.genres.map((genre) => {
@@ -59,7 +67,7 @@ export const TitlePage = () => {
               })}
             </div>
             <div className={styles.rowCast}>
-              <span>{params.media === 'movie' ? 'Director:' : 'Creator:'}</span>
+              <span>{params.media === "movie" ? "Director:" : "Creator:"}</span>
               <p>{directorFormat(loaderData.cast.crew)}</p>
             </div>
 

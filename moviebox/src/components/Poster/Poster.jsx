@@ -11,7 +11,7 @@ export const Poster = ({ titleData, media }) => {
 
   return (
     <Link
-      to={`${titleData.media_type || media}/${titleData.id}`}
+      to={`/${titleData.media_type || media}/${titleData.id}`}
       className={styles.background}
       style={{
         backgroundImage: titleData.poster_path

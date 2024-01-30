@@ -3,27 +3,41 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 import logo from "../../assets/logo.svg";
 import { useNavSearch } from "../../hooks/useNavSearch";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 
 //naprawic stan active linkow
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
+  const [isFocused, setIsFocused] = useState(false);
   const searchedTitles = useNavSearch(inputValue);
   const navigate = useNavigate();
+  const ref = useRef(null);
 
   const searchHandler = (event) => {
     if (event.key === "Enter" && inputValue.length > 0) {
       navigate(`/search/${inputValue}`);
+      setInputValue("");
     }
   };
 
+  useEffect(() => {
+    const handleOutSideClick = (event) => {
+      if (!ref.current?.contains(event.target)) {
+        setIsFocused(false);
+      }
+    };
+    window.addEventListener("mousedown", handleOutSideClick);
+    return () => {
+      window.removeEventListener("mousedown", handleOutSideClick);
+    };
+  }, [ref]);
   return (
     <div className={styles.navBackground}>
       <CenteredContent>
         <nav className={styles.navBar}>
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className={styles.logo} />
           </Link>
           <div className={styles.navLinks}>
             <NavLink
@@ -55,9 +69,10 @@ export const Navigation = () => {
               Watchlist
             </NavLink>
 
-            <div className={styles.searchBox}>
+            <div className={styles.searchBox} ref={ref}>
               <input
                 onChange={(e) => setInputValue(e.target.value)}
+                onFocus={() => setIsFocused(true)}
                 className={styles.navInput}
                 type="text"
                 name="search"
@@ -65,9 +80,20 @@ export const Navigation = () => {
                 onKeyUp={searchHandler}
               />
               <div className={styles.searchResults}>
-                {searchedTitles && 
+                {searchedTitles &&
+                  isFocused &&
                   searchedTitles.slice(0, 4).map((title) => {
-                    return <SearchedTitle key={title.id} titleData={title} />;
+                    return (
+                      <div
+                        key={title.id}
+                        onClick={() => {
+                          setIsFocused(false);
+                         
+                        }}>
+                        {" "}
+                        <SearchedTitle titleData={title} />
+                      </div>
+                    );
                   })}
               </div>
             </div>

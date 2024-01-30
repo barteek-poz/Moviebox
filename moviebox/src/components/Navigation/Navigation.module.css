@@ -10,6 +10,13 @@
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+ border: 1px solid var(--color-yellow);
+ border-radius: 10px;
+ padding: 4px;
+ padding-left: 6px;
+}
+
 
 .navLinks {
   display: flex;
@@ -34,11 +41,15 @@
   background-color: var(--color-yellow);
   color: var(--color-black);
 }
-.navLink:hover,
-.navLink:focus {
+.navLink:hover {
   color: var(--color-yellow);
   border-bottom: 2px solid var(--color-yellow);
   scale: 1.05;
+}
+.navLink:focus {
+  outline: none;
+  border: 2px solid var(--color-yellow);
+  border-radius: 10px;
 }
 .navInput {
   font-size: 1.8rem;

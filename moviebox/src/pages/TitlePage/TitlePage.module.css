@@ -69,20 +69,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  background-color: transparent;
-  color: var(--color-white);
   font-size: 2rem;
+  padding: 8px;
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 500;
   border: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
   transition: .3s;
 }
 
-.btnAdd:hover {
-  border-bottom: 2px solid var(--color-white);
-}
+
 
 .btnAdd img {
   width: 20px;
