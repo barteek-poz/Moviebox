@@ -16,10 +16,15 @@ import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
 import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
 import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
+import { addToWatchlist } from "./actions/addToWatchlist.js";
 
-
+//zmienic routing tak zeby byly childreny a nie osobne sciezki
 
 const router = createBrowserRouter([
+  {
+    path: "/add-to-watchlist/:titleId",
+    action: addToWatchlist
+  },
   {
     path: "/",
     element: <MainPage />,

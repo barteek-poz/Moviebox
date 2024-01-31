@@ -1,14 +1,14 @@
 import styles from "../Poster/Poster.module.css";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState } from "react";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { overviewFormat } from "../../helpers/overviewFormat";
 import NO_POSTER from "../../assets/no_poster.png";
 export const Poster = ({ titleData, media }) => {
   const [showInfo, setShowInfo] = useState(false);
-
+ 
   return (
     <div
       className={styles.background}
@@ -31,6 +31,7 @@ export const Poster = ({ titleData, media }) => {
             </div>
             <p>{overviewFormat(titleData.overview)}</p>
           </Link>
+
           <button className={styles.addBtn}>
             Add to watchlist <img src={ADD_ICON} alt="add-icon" />
           </button>

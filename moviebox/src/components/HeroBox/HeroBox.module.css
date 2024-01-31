@@ -23,6 +23,9 @@
     color: var(--color-white);
    
 }
+.heroBox span:hover {
+    border-bottom: 2px solid var(--color-yellow);
+}
 .heroBox a {
     text-decoration: none;
 }

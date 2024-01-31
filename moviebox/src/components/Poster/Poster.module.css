@@ -11,6 +11,9 @@
   text-decoration: none;
   position: relative;
 }
+.background:hover {
+  border: 1px solid var(--color-yellow);
+}
 
 .infoBox {
   position: absolute;
@@ -65,6 +68,7 @@
 
 .secondRow p {
   font-size: 2.4rem;
+
 }
 .secondRow img {
   width: 2rem;
