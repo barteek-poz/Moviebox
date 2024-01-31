@@ -10,8 +10,7 @@ export const Poster = ({ titleData, media }) => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <Link
-      to={`/${titleData.media_type || media}/${titleData.id}`}
+    <div
       className={styles.background}
       style={{
         backgroundImage: titleData.poster_path
@@ -22,19 +21,21 @@ export const Poster = ({ titleData, media }) => {
       onMouseLeave={() => setShowInfo(false)}>
       {showInfo && (
         <div className={styles.infoBox}>
-          <div className={styles.firstRow}>
-            <span>{titleData.title || titleData.name}</span>
-            <button className={styles.addBtn}>
-              <img src={ADD_ICON} alt="add-icon" />
-            </button>
-          </div>
-          <div className={styles.secondRow}>
-            <img src={STAR_ICON} alt="star-icon" />
-            <p>{ratingFormat(titleData.vote_average)}</p>
-          </div>
-          <p>{overviewFormat(titleData.overview)}</p>
+          <Link to={`/${titleData.media_type || media}/${titleData.id}`}>
+            <div className={styles.firstRow}>
+              <span>{titleData.title || titleData.name}</span>
+            </div>
+            <div className={styles.secondRow}>
+              <img src={STAR_ICON} alt="star-icon" />
+              <p>{ratingFormat(titleData.vote_average)}</p>
+            </div>
+            <p>{overviewFormat(titleData.overview)}</p>
+          </Link>
+          <button className={styles.addBtn}>
+            Add to watchlist <img src={ADD_ICON} alt="add-icon" />
+          </button>
         </div>
       )}
-    </Link>
+    </div>
   );
 };
