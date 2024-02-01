@@ -10,7 +10,7 @@ export const Streaming = () => {
     ...loaderData.movieList.slice(0, 5),
     ...loaderData.tvList.slice(0, 5),
   ];
-console.log(loaderData)
+
   return (
     <MainLayout>
       <Hero titlesArr={heroTitles} />

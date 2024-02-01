@@ -8,7 +8,8 @@ import { dateFormat } from "../../helpers/dateFormat";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { directorFormat } from "../../helpers/directorFormat";
 import { runtimeFormat } from "../../helpers/runtimeFormat";
-import NO_POSTER from '../../assets/no_poster.png'
+import { addToWatchlist } from "../../helpers/addToWatchlist";
+import NO_POSTER from "../../assets/no_poster.png";
 
 export const TitlePage = () => {
   const loaderData = useLoaderData();
@@ -20,7 +21,7 @@ export const TitlePage = () => {
       }
     })
     .slice(0, 3);
- 
+  console.log(loaderData);
   return (
     <MainLayout>
       <CenteredContent>
@@ -32,13 +33,18 @@ export const TitlePage = () => {
                 ? `url(https://image.tmdb.org/t/p/original/${loaderData.details.poster_path})`
                 : `url(${NO_POSTER})`,
             }}></div>
-        
+
           <div className={styles.titleInfo}>
             <div className={styles.titleRow}>
               <h1>
                 {loaderData.details.original_title || loaderData.details.name}
               </h1>
-              <button className={styles.btnAdd}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  addToWatchlist(loaderData.details);
+                }}
+                className={styles.btnAdd}>
                 Add to watchlist <img src={ADD_ICON} alt="add-icon" />
               </button>
             </div>

@@ -24,10 +24,7 @@ export const Watchlist = () => {
         <div className={styles.titleList}>
         {loaderData.map(title => {
           return  <Poster key={title.id}
-          title={title.title}
-          vote_average={title.vote_average}
-          overview={title.overview}
-          poster={title.poster_path}
+          titleData={title} 
         />
         })}
         </div>

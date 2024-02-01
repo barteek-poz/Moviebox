@@ -6,9 +6,10 @@ import { useState } from "react";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { overviewFormat } from "../../helpers/overviewFormat";
 import NO_POSTER from "../../assets/no_poster.png";
+import { addToWatchlist } from "../../helpers/addToWatchlist";
 export const Poster = ({ titleData, media }) => {
   const [showInfo, setShowInfo] = useState(false);
- 
+
   return (
     <div
       className={styles.background}
@@ -32,7 +33,10 @@ export const Poster = ({ titleData, media }) => {
             <p>{overviewFormat(titleData.overview)}</p>
           </Link>
 
-          <button className={styles.addBtn}>
+          <button className={styles.addBtn} onClick={(e)=> {
+            e.stopPropagation()
+            addToWatchlist(titleData)
+          }}>
             Add to watchlist <img src={ADD_ICON} alt="add-icon" />
           </button>
         </div>
