@@ -19,7 +19,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   background-color: var(--color-main);
   font-size: 1.6rem;
@@ -27,6 +26,7 @@
   animation-name: slidein;
   animation-duration: .4s;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 .infoBox a {
   color: var(--color-white);
@@ -40,6 +40,11 @@
 }
 .firstRow span {
   font-size: 2.4rem;
+}
+
+.overview {
+  max-height: 15rem;
+  overflow: scroll;
 }
 
 .addBtn {
@@ -68,7 +73,6 @@
 
 .secondRow p {
   font-size: 2.4rem;
-
 }
 .secondRow img {
   width: 2rem;

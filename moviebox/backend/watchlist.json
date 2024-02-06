@@ -1,925 +1,285 @@
 {
   "titles": [
     {
-      "id": 572802,
+      "id": "61818",
       "adult": false,
-      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
-      "belongs_to_collection": {
-        "id": 573693,
-        "name": "Aquaman Collection",
-        "poster_path": "/rNQompSTfAG5O2iXSH8Phay4L45.jpg",
-        "backdrop_path": "/5iidzov8DrsSyZdefeo7jBLDNUW.jpg"
-      },
-      "budget": 205000000,
-      "genres": [
-        {
-          "id": 28,
-          "name": "Action"
-        },
-        {
-          "id": 12,
-          "name": "Adventure"
-        },
-        {
-          "id": 14,
-          "name": "Fantasy"
-        }
+      "backdrop_path": "/5AkPhazx8F0Ht74CUdJU03vNzBi.jpg",
+      "genre_ids": [
+        10767,
+        35
       ],
-      "homepage": "https://www.aquamanmovie.com",
-      "imdb_id": "tt9663764",
-      "original_language": "en",
-      "original_title": "Aquaman and the Lost Kingdom",
-      "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
-      "popularity": 3988.165,
-      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
-      "production_companies": [
-        {
-          "id": 174,
-          "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
-          "name": "Warner Bros. Pictures",
-          "origin_country": "US"
-        },
-        {
-          "id": 11565,
-          "logo_path": null,
-          "name": "The Safran Company",
-          "origin_country": "US"
-        },
-        {
-          "id": 76907,
-          "logo_path": "/ygMQtjsKX7BZkCQhQZY82lgnCUO.png",
-          "name": "Atomic Monster",
-          "origin_country": "US"
-        },
-        {
-          "id": 128064,
-          "logo_path": "/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
-          "name": "DC Films",
-          "origin_country": "US"
-        },
-        {
-          "id": 216687,
-          "logo_path": null,
-          "name": "Domain Entertainment",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "release_date": "2023-12-20",
-      "revenue": 412442014,
-      "runtime": 124,
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        }
-      ],
-      "status": "Released",
-      "tagline": "The tide is turning.",
-      "title": "Aquaman and the Lost Kingdom",
-      "video": false,
-      "vote_average": 6.988,
-      "vote_count": 1232
-    },
-    {
-      "id": 572802,
-      "adult": false,
-      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
-      "belongs_to_collection": {
-        "id": 573693,
-        "name": "Aquaman Collection",
-        "poster_path": "/rNQompSTfAG5O2iXSH8Phay4L45.jpg",
-        "backdrop_path": "/5iidzov8DrsSyZdefeo7jBLDNUW.jpg"
-      },
-      "budget": 205000000,
-      "genres": [
-        {
-          "id": 28,
-          "name": "Action"
-        },
-        {
-          "id": 12,
-          "name": "Adventure"
-        },
-        {
-          "id": 14,
-          "name": "Fantasy"
-        }
-      ],
-      "homepage": "https://www.aquamanmovie.com",
-      "imdb_id": "tt9663764",
-      "original_language": "en",
-      "original_title": "Aquaman and the Lost Kingdom",
-      "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
-      "popularity": 3988.165,
-      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
-      "production_companies": [
-        {
-          "id": 174,
-          "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
-          "name": "Warner Bros. Pictures",
-          "origin_country": "US"
-        },
-        {
-          "id": 11565,
-          "logo_path": null,
-          "name": "The Safran Company",
-          "origin_country": "US"
-        },
-        {
-          "id": 76907,
-          "logo_path": "/ygMQtjsKX7BZkCQhQZY82lgnCUO.png",
-          "name": "Atomic Monster",
-          "origin_country": "US"
-        },
-        {
-          "id": 128064,
-          "logo_path": "/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
-          "name": "DC Films",
-          "origin_country": "US"
-        },
-        {
-          "id": 216687,
-          "logo_path": null,
-          "name": "Domain Entertainment",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "release_date": "2023-12-20",
-      "revenue": 412442014,
-      "runtime": 124,
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        }
-      ],
-      "status": "Released",
-      "tagline": "The tide is turning.",
-      "title": "Aquaman and the Lost Kingdom",
-      "video": false,
-      "vote_average": 6.988,
-      "vote_count": 1232
-    },
-    {
-      "id": 572802,
-      "adult": false,
-      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
-      "belongs_to_collection": {
-        "id": 573693,
-        "name": "Aquaman Collection",
-        "poster_path": "/rNQompSTfAG5O2iXSH8Phay4L45.jpg",
-        "backdrop_path": "/5iidzov8DrsSyZdefeo7jBLDNUW.jpg"
-      },
-      "budget": 205000000,
-      "genres": [
-        {
-          "id": 28,
-          "name": "Action"
-        },
-        {
-          "id": 12,
-          "name": "Adventure"
-        },
-        {
-          "id": 14,
-          "name": "Fantasy"
-        }
-      ],
-      "homepage": "https://www.aquamanmovie.com",
-      "imdb_id": "tt9663764",
-      "original_language": "en",
-      "original_title": "Aquaman and the Lost Kingdom",
-      "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
-      "popularity": 3988.165,
-      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
-      "production_companies": [
-        {
-          "id": 174,
-          "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
-          "name": "Warner Bros. Pictures",
-          "origin_country": "US"
-        },
-        {
-          "id": 11565,
-          "logo_path": null,
-          "name": "The Safran Company",
-          "origin_country": "US"
-        },
-        {
-          "id": 76907,
-          "logo_path": "/ygMQtjsKX7BZkCQhQZY82lgnCUO.png",
-          "name": "Atomic Monster",
-          "origin_country": "US"
-        },
-        {
-          "id": 128064,
-          "logo_path": "/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
-          "name": "DC Films",
-          "origin_country": "US"
-        },
-        {
-          "id": 216687,
-          "logo_path": null,
-          "name": "Domain Entertainment",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "release_date": "2023-12-20",
-      "revenue": 412442014,
-      "runtime": 124,
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        }
-      ],
-      "status": "Released",
-      "tagline": "The tide is turning.",
-      "title": "Aquaman and the Lost Kingdom",
-      "video": false,
-      "vote_average": 6.988,
-      "vote_count": 1232
-    },
-    {
-      "id": 572802,
-      "adult": false,
-      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
-      "belongs_to_collection": {
-        "id": 573693,
-        "name": "Aquaman Collection",
-        "poster_path": "/rNQompSTfAG5O2iXSH8Phay4L45.jpg",
-        "backdrop_path": "/5iidzov8DrsSyZdefeo7jBLDNUW.jpg"
-      },
-      "budget": 205000000,
-      "genres": [
-        {
-          "id": 28,
-          "name": "Action"
-        },
-        {
-          "id": 12,
-          "name": "Adventure"
-        },
-        {
-          "id": 14,
-          "name": "Fantasy"
-        }
-      ],
-      "homepage": "https://www.aquamanmovie.com",
-      "imdb_id": "tt9663764",
-      "original_language": "en",
-      "original_title": "Aquaman and the Lost Kingdom",
-      "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
-      "popularity": 3988.165,
-      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
-      "production_companies": [
-        {
-          "id": 174,
-          "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
-          "name": "Warner Bros. Pictures",
-          "origin_country": "US"
-        },
-        {
-          "id": 11565,
-          "logo_path": null,
-          "name": "The Safran Company",
-          "origin_country": "US"
-        },
-        {
-          "id": 76907,
-          "logo_path": "/ygMQtjsKX7BZkCQhQZY82lgnCUO.png",
-          "name": "Atomic Monster",
-          "origin_country": "US"
-        },
-        {
-          "id": 128064,
-          "logo_path": "/13F3Jf7EFAcREU0xzZqJnVnyGXu.png",
-          "name": "DC Films",
-          "origin_country": "US"
-        },
-        {
-          "id": 216687,
-          "logo_path": null,
-          "name": "Domain Entertainment",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "release_date": "2023-12-20",
-      "revenue": 412442014,
-      "runtime": 124,
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        }
-      ],
-      "status": "Released",
-      "tagline": "The tide is turning.",
-      "title": "Aquaman and the Lost Kingdom",
-      "video": false,
-      "vote_average": 6.988,
-      "vote_count": 1232
-    },
-    {
-      "id": 137893,
-      "adult": false,
-      "backdrop_path": "/nj06Yo0yVzI7jx6novjyGOyNQKC.jpg",
-      "created_by": [
-        {
-          "id": 15220,
-          "credit_id": "64c848c508cf8700e2773f5b",
-          "name": "Eric Newman",
-          "gender": 2,
-          "profile_path": "/igKWW23mx3EYZVaqy9Yv7zo4bzR.jpg"
-        },
-        {
-          "id": 81203,
-          "credit_id": "64c8488cb9744200cabd651c",
-          "name": "Doug Miro",
-          "gender": 2,
-          "profile_path": "/ooAtZIPaK3VZDXmJfBWXPq2tavS.jpg"
-        },
-        {
-          "id": 121479,
-          "credit_id": "64c8489215959f00ae945ff3",
-          "name": "Carlo Bernard",
-          "gender": 2,
-          "profile_path": "/jOfuvuGuTjIwfruRbh7ZL9kZ4X.jpg"
-        },
-        {
-          "id": 208073,
-          "credit_id": "64c848cfd5191f00ffefd8aa",
-          "name": "Ingrid Escajeda",
-          "gender": 1,
-          "profile_path": "/eQCtpp720LmzCMBx6l1sS4BgEc3.jpg"
-        }
-      ],
-      "episode_run_time": [],
-      "first_air_date": "2024-01-25",
-      "genres": [
-        {
-          "id": 18,
-          "name": "Drama"
-        },
-        {
-          "id": 80,
-          "name": "Crime"
-        }
-      ],
-      "homepage": "https://www.netflix.com/title/81133447",
-      "in_production": false,
-      "languages": [
-        "en",
-        "es"
-      ],
-      "last_air_date": "2024-01-25",
-      "last_episode_to_air": {
-        "id": 3320990,
-        "name": "Adios, Miami",
-        "overview": "Feeling pressure from all sides, Griselda gets out of Miami. But with her options dwindling and enemies closing in, can she outrun fate?",
-        "vote_average": 0,
-        "vote_count": 0,
-        "air_date": "2024-01-25",
-        "episode_number": 6,
-        "episode_type": "finale",
-        "production_code": "",
-        "runtime": 49,
-        "season_number": 1,
-        "show_id": 137893,
-        "still_path": "/eyuPr2Bx5P8l3SlWaFDcnxw2kPr.jpg"
-      },
-      "name": "Griselda",
-      "next_episode_to_air": null,
-      "networks": [
-        {
-          "id": 213,
-          "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
-          "name": "Netflix",
-          "origin_country": ""
-        }
-      ],
-      "number_of_episodes": 6,
-      "number_of_seasons": 1,
       "origin_country": [
         "US"
       ],
       "original_language": "en",
-      "original_name": "Griselda",
-      "overview": "Chronicles the life of Griselda Blanco, who created one of the most profitable cartels in history. A devoted mother, Blanco’s lethal blend of charm and unsuspecting savagery helped her expertly navigate between family and business leading her to become widely known as the “Black Widow”.",
-      "popularity": 1313.917,
-      "poster_path": "/nhEtK1lJKb3kqBtDBDXynGr3hJL.jpg",
-      "production_companies": [
-        {
-          "id": 106800,
-          "logo_path": "/coUbskxUod4obdo4WbQqEPynz9K.png",
-          "name": "Latin World Entertainment",
-          "origin_country": "US"
-        },
-        {
-          "id": 156880,
-          "logo_path": null,
-          "name": "Grand Electric",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "seasons": [
-        {
-          "air_date": "2024-01-25",
-          "episode_count": 6,
-          "id": 218244,
-          "name": "Limited Series",
-          "overview": "",
-          "poster_path": "/nUil7dx774FAi5zdhxtNPWoSqho.jpg",
-          "season_number": 1,
-          "vote_average": 7.6
-        }
-      ],
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        },
-        {
-          "english_name": "Spanish",
-          "iso_639_1": "es",
-          "name": "Español"
-        }
-      ],
-      "status": "Ended",
-      "tagline": "A woman of substance.",
-      "type": "Miniseries",
-      "vote_average": 7.896,
-      "vote_count": 77
+      "original_name": "Late Night with Seth Meyers",
+      "overview": "Seth Meyers, who is \"Saturday Night Live’s\" longest serving anchor on the show’s wildly popular \"Weekend Update,\" takes over as host of NBC’s \"Late Night\" — home to A-list celebrity guests, memorable comedy and the best in musical talent. As the Emmy Award-winning head writer for \"SNL,\" Meyers has established a reputation for sharp wit and perfectly timed comedy, and has gained fame for his spot-on jokes and satire. Meyers takes his departure from \"SNL\" to his new post at \"Late Night,\" as Jimmy Fallon moves to \"The Tonight Show\".",
+      "popularity": 3860.786,
+      "poster_path": "/x5asOuPOjW21e0Ykkvkuzu1TGEl.jpg",
+      "first_air_date": "2014-02-25",
+      "name": "Late Night with Seth Meyers",
+      "vote_average": 5.521,
+      "vote_count": 70
     },
     {
-      "id": 137893,
+      "id": "866398",
       "adult": false,
-      "backdrop_path": "/nj06Yo0yVzI7jx6novjyGOyNQKC.jpg",
-      "created_by": [
-        {
-          "id": 15220,
-          "credit_id": "64c848c508cf8700e2773f5b",
-          "name": "Eric Newman",
-          "gender": 2,
-          "profile_path": "/igKWW23mx3EYZVaqy9Yv7zo4bzR.jpg"
-        },
-        {
-          "id": 81203,
-          "credit_id": "64c8488cb9744200cabd651c",
-          "name": "Doug Miro",
-          "gender": 2,
-          "profile_path": "/ooAtZIPaK3VZDXmJfBWXPq2tavS.jpg"
-        },
-        {
-          "id": 121479,
-          "credit_id": "64c8489215959f00ae945ff3",
-          "name": "Carlo Bernard",
-          "gender": 2,
-          "profile_path": "/jOfuvuGuTjIwfruRbh7ZL9kZ4X.jpg"
-        },
-        {
-          "id": 208073,
-          "credit_id": "64c848cfd5191f00ffefd8aa",
-          "name": "Ingrid Escajeda",
-          "gender": 1,
-          "profile_path": "/eQCtpp720LmzCMBx6l1sS4BgEc3.jpg"
-        }
-      ],
-      "episode_run_time": [],
-      "first_air_date": "2024-01-25",
-      "genres": [
-        {
-          "id": 18,
-          "name": "Drama"
-        },
-        {
-          "id": 80,
-          "name": "Crime"
-        }
-      ],
-      "homepage": "https://www.netflix.com/title/81133447",
-      "in_production": false,
-      "languages": [
-        "en",
-        "es"
-      ],
-      "last_air_date": "2024-01-25",
-      "last_episode_to_air": {
-        "id": 3320990,
-        "name": "Adios, Miami",
-        "overview": "Feeling pressure from all sides, Griselda gets out of Miami. But with her options dwindling and enemies closing in, can she outrun fate?",
-        "vote_average": 0,
-        "vote_count": 0,
-        "air_date": "2024-01-25",
-        "episode_number": 6,
-        "episode_type": "finale",
-        "production_code": "",
-        "runtime": 49,
-        "season_number": 1,
-        "show_id": 137893,
-        "still_path": "/eyuPr2Bx5P8l3SlWaFDcnxw2kPr.jpg"
-      },
-      "name": "Griselda",
-      "next_episode_to_air": null,
-      "networks": [
-        {
-          "id": 213,
-          "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
-          "name": "Netflix",
-          "origin_country": ""
-        }
-      ],
-      "number_of_episodes": 6,
-      "number_of_seasons": 1,
-      "origin_country": [
-        "US"
-      ],
+      "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
+      "title": "The Beekeeper",
       "original_language": "en",
-      "original_name": "Griselda",
-      "overview": "Chronicles the life of Griselda Blanco, who created one of the most profitable cartels in history. A devoted mother, Blanco’s lethal blend of charm and unsuspecting savagery helped her expertly navigate between family and business leading her to become widely known as the “Black Widow”.",
-      "popularity": 1313.917,
-      "poster_path": "/nhEtK1lJKb3kqBtDBDXynGr3hJL.jpg",
-      "production_companies": [
-        {
-          "id": 106800,
-          "logo_path": "/coUbskxUod4obdo4WbQqEPynz9K.png",
-          "name": "Latin World Entertainment",
-          "origin_country": "US"
-        },
-        {
-          "id": 156880,
-          "logo_path": null,
-          "name": "Grand Electric",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "seasons": [
-        {
-          "air_date": "2024-01-25",
-          "episode_count": 6,
-          "id": 218244,
-          "name": "Limited Series",
-          "overview": "",
-          "poster_path": "/nUil7dx774FAi5zdhxtNPWoSqho.jpg",
-          "season_number": 1,
-          "vote_average": 7.6
-        }
-      ],
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        },
-        {
-          "english_name": "Spanish",
-          "iso_639_1": "es",
-          "name": "Español"
-        }
-      ],
-      "status": "Ended",
-      "tagline": "A woman of substance.",
-      "type": "Miniseries",
-      "vote_average": 7.896,
-      "vote_count": 77
-    },
-    {
-      "id": 137893,
-      "adult": false,
-      "backdrop_path": "/nj06Yo0yVzI7jx6novjyGOyNQKC.jpg",
-      "created_by": [
-        {
-          "id": 15220,
-          "credit_id": "64c848c508cf8700e2773f5b",
-          "name": "Eric Newman",
-          "gender": 2,
-          "profile_path": "/igKWW23mx3EYZVaqy9Yv7zo4bzR.jpg"
-        },
-        {
-          "id": 81203,
-          "credit_id": "64c8488cb9744200cabd651c",
-          "name": "Doug Miro",
-          "gender": 2,
-          "profile_path": "/ooAtZIPaK3VZDXmJfBWXPq2tavS.jpg"
-        },
-        {
-          "id": 121479,
-          "credit_id": "64c8489215959f00ae945ff3",
-          "name": "Carlo Bernard",
-          "gender": 2,
-          "profile_path": "/jOfuvuGuTjIwfruRbh7ZL9kZ4X.jpg"
-        },
-        {
-          "id": 208073,
-          "credit_id": "64c848cfd5191f00ffefd8aa",
-          "name": "Ingrid Escajeda",
-          "gender": 1,
-          "profile_path": "/eQCtpp720LmzCMBx6l1sS4BgEc3.jpg"
-        }
-      ],
-      "episode_run_time": [],
-      "first_air_date": "2024-01-25",
-      "genres": [
-        {
-          "id": 18,
-          "name": "Drama"
-        },
-        {
-          "id": 80,
-          "name": "Crime"
-        }
-      ],
-      "homepage": "https://www.netflix.com/title/81133447",
-      "in_production": false,
-      "languages": [
-        "en",
-        "es"
-      ],
-      "last_air_date": "2024-01-25",
-      "last_episode_to_air": {
-        "id": 3320990,
-        "name": "Adios, Miami",
-        "overview": "Feeling pressure from all sides, Griselda gets out of Miami. But with her options dwindling and enemies closing in, can she outrun fate?",
-        "vote_average": 0,
-        "vote_count": 0,
-        "air_date": "2024-01-25",
-        "episode_number": 6,
-        "episode_type": "finale",
-        "production_code": "",
-        "runtime": 49,
-        "season_number": 1,
-        "show_id": 137893,
-        "still_path": "/eyuPr2Bx5P8l3SlWaFDcnxw2kPr.jpg"
-      },
-      "name": "Griselda",
-      "next_episode_to_air": null,
-      "networks": [
-        {
-          "id": 213,
-          "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
-          "name": "Netflix",
-          "origin_country": ""
-        }
-      ],
-      "number_of_episodes": 6,
-      "number_of_seasons": 1,
-      "origin_country": [
-        "US"
-      ],
-      "original_language": "en",
-      "original_name": "Griselda",
-      "overview": "Chronicles the life of Griselda Blanco, who created one of the most profitable cartels in history. A devoted mother, Blanco’s lethal blend of charm and unsuspecting savagery helped her expertly navigate between family and business leading her to become widely known as the “Black Widow”.",
-      "popularity": 1313.917,
-      "poster_path": "/nhEtK1lJKb3kqBtDBDXynGr3hJL.jpg",
-      "production_companies": [
-        {
-          "id": 106800,
-          "logo_path": "/coUbskxUod4obdo4WbQqEPynz9K.png",
-          "name": "Latin World Entertainment",
-          "origin_country": "US"
-        },
-        {
-          "id": 156880,
-          "logo_path": null,
-          "name": "Grand Electric",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "seasons": [
-        {
-          "air_date": "2024-01-25",
-          "episode_count": 6,
-          "id": 218244,
-          "name": "Limited Series",
-          "overview": "",
-          "poster_path": "/nUil7dx774FAi5zdhxtNPWoSqho.jpg",
-          "season_number": 1,
-          "vote_average": 7.6
-        }
-      ],
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        },
-        {
-          "english_name": "Spanish",
-          "iso_639_1": "es",
-          "name": "Español"
-        }
-      ],
-      "status": "Ended",
-      "tagline": "A woman of substance.",
-      "type": "Miniseries",
-      "vote_average": 7.896,
-      "vote_count": 77
-    },
-    {
-      "id": 137893,
-      "adult": false,
-      "backdrop_path": "/nj06Yo0yVzI7jx6novjyGOyNQKC.jpg",
-      "created_by": [
-        {
-          "id": 15220,
-          "credit_id": "64c848c508cf8700e2773f5b",
-          "name": "Eric Newman",
-          "gender": 2,
-          "profile_path": "/igKWW23mx3EYZVaqy9Yv7zo4bzR.jpg"
-        },
-        {
-          "id": 81203,
-          "credit_id": "64c8488cb9744200cabd651c",
-          "name": "Doug Miro",
-          "gender": 2,
-          "profile_path": "/ooAtZIPaK3VZDXmJfBWXPq2tavS.jpg"
-        },
-        {
-          "id": 121479,
-          "credit_id": "64c8489215959f00ae945ff3",
-          "name": "Carlo Bernard",
-          "gender": 2,
-          "profile_path": "/jOfuvuGuTjIwfruRbh7ZL9kZ4X.jpg"
-        },
-        {
-          "id": 208073,
-          "credit_id": "64c848cfd5191f00ffefd8aa",
-          "name": "Ingrid Escajeda",
-          "gender": 1,
-          "profile_path": "/eQCtpp720LmzCMBx6l1sS4BgEc3.jpg"
-        }
-      ],
-      "episode_run_time": [],
-      "first_air_date": "2024-01-25",
-      "genres": [
-        {
-          "id": 18,
-          "name": "Drama"
-        },
-        {
-          "id": 80,
-          "name": "Crime"
-        }
-      ],
-      "homepage": "https://www.netflix.com/title/81133447",
-      "in_production": false,
-      "languages": [
-        "en",
-        "es"
-      ],
-      "last_air_date": "2024-01-25",
-      "last_episode_to_air": {
-        "id": 3320990,
-        "name": "Adios, Miami",
-        "overview": "Feeling pressure from all sides, Griselda gets out of Miami. But with her options dwindling and enemies closing in, can she outrun fate?",
-        "vote_average": 0,
-        "vote_count": 0,
-        "air_date": "2024-01-25",
-        "episode_number": 6,
-        "episode_type": "finale",
-        "production_code": "",
-        "runtime": 49,
-        "season_number": 1,
-        "show_id": 137893,
-        "still_path": "/eyuPr2Bx5P8l3SlWaFDcnxw2kPr.jpg"
-      },
-      "name": "Griselda",
-      "next_episode_to_air": null,
-      "networks": [
-        {
-          "id": 213,
-          "logo_path": "/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
-          "name": "Netflix",
-          "origin_country": ""
-        }
-      ],
-      "number_of_episodes": 6,
-      "number_of_seasons": 1,
-      "origin_country": [
-        "US"
-      ],
-      "original_language": "en",
-      "original_name": "Griselda",
-      "overview": "Chronicles the life of Griselda Blanco, who created one of the most profitable cartels in history. A devoted mother, Blanco’s lethal blend of charm and unsuspecting savagery helped her expertly navigate between family and business leading her to become widely known as the “Black Widow”.",
-      "popularity": 1313.917,
-      "poster_path": "/nhEtK1lJKb3kqBtDBDXynGr3hJL.jpg",
-      "production_companies": [
-        {
-          "id": 106800,
-          "logo_path": "/coUbskxUod4obdo4WbQqEPynz9K.png",
-          "name": "Latin World Entertainment",
-          "origin_country": "US"
-        },
-        {
-          "id": 156880,
-          "logo_path": null,
-          "name": "Grand Electric",
-          "origin_country": "US"
-        }
-      ],
-      "production_countries": [
-        {
-          "iso_3166_1": "US",
-          "name": "United States of America"
-        }
-      ],
-      "seasons": [
-        {
-          "air_date": "2024-01-25",
-          "episode_count": 6,
-          "id": 218244,
-          "name": "Limited Series",
-          "overview": "",
-          "poster_path": "/nUil7dx774FAi5zdhxtNPWoSqho.jpg",
-          "season_number": 1,
-          "vote_average": 7.6
-        }
-      ],
-      "spoken_languages": [
-        {
-          "english_name": "English",
-          "iso_639_1": "en",
-          "name": "English"
-        },
-        {
-          "english_name": "Spanish",
-          "iso_639_1": "es",
-          "name": "Español"
-        }
-      ],
-      "status": "Ended",
-      "tagline": "A woman of substance.",
-      "type": "Miniseries",
-      "vote_average": 7.896,
-      "vote_count": 77
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yOm993lsJyPmBodlYjgpPwBjXP9.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
+      "original_title": "The Beekeeper",
+      "overview": "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
+      "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
       "media_type": "movie",
       "genre_ids": [
-        35,
-        10751,
-        14
+        28,
+        53
       ],
-      "popularity": 2113.854,
-      "release_date": "2023-12-06",
+      "popularity": 1268.827,
+      "release_date": "2024-01-10",
       "video": false,
-      "vote_average": 7.227,
-      "vote_count": 1697
+      "vote_average": 7.328,
+      "vote_count": 421
+    },
+    {
+      "id": 866398,
+      "adult": false,
+      "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
+      "title": "The Beekeeper",
+      "original_language": "en",
+      "original_title": "The Beekeeper",
+      "overview": "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
+      "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        53,
+        18
+      ],
+      "popularity": 4874.325,
+      "release_date": "2024-01-10",
+      "video": false,
+      "vote_average": 7.45,
+      "vote_count": 699
+    },
+    {
+      "id": 48891,
+      "adult": false,
+      "backdrop_path": "/9AeiA1XtP5sel2tAf9LaGeUjhDb.jpg",
+      "created_by": [
+        {
+          "id": 1226308,
+          "credit_id": "52597903760ee34661a6ff40",
+          "name": "Michael Schur",
+          "gender": 2,
+          "profile_path": "/uFqjvTHNCfThf9ahEIYWFkszm9c.jpg"
+        },
+        {
+          "id": 1230199,
+          "credit_id": "52597903760ee34661a6ff3a",
+          "name": "Daniel J. Goor",
+          "gender": 2,
+          "profile_path": null
+        }
+      ],
+      "episode_run_time": [
+        21,
+        46
+      ],
+      "first_air_date": "2013-09-17",
+      "genres": [
+        {
+          "id": 35,
+          "name": "Comedy"
+        },
+        {
+          "id": 80,
+          "name": "Crime"
+        }
+      ],
+      "homepage": "https://www.nbc.com/brooklyn-nine-nine",
+      "in_production": false,
+      "languages": [
+        "en"
+      ],
+      "last_air_date": "2021-09-16",
+      "last_episode_to_air": {
+        "id": 3172868,
+        "name": "The Last Day",
+        "overview": "The squad takes stock of its eight years together and looks toward the future.",
+        "vote_average": 7.3,
+        "vote_count": 12,
+        "air_date": "2021-09-16",
+        "episode_number": 9,
+        "episode_type": "finale",
+        "production_code": "809 / 810",
+        "runtime": 46,
+        "season_number": 8,
+        "show_id": 48891,
+        "still_path": "/3a2HqGlIU94xdfLdZDoHsX32e9u.jpg"
+      },
+      "name": "Brooklyn Nine-Nine",
+      "next_episode_to_air": null,
+      "networks": [
+        {
+          "id": 6,
+          "logo_path": "/cm111bsDVlYaC1foL0itvEI4yLG.png",
+          "name": "NBC",
+          "origin_country": "US"
+        },
+        {
+          "id": 19,
+          "logo_path": "/1DSpHrWyOORkL9N2QHX7Adt31mQ.png",
+          "name": "FOX",
+          "origin_country": "US"
+        }
+      ],
+      "number_of_episodes": 152,
+      "number_of_seasons": 8,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Brooklyn Nine-Nine",
+      "overview": "A single-camera ensemble comedy following the lives of an eclectic group of detectives in a New York precinct, including one slacker who is forced to shape up when he gets a new boss.",
+      "popularity": 1385.431,
+      "poster_path": "/hgRMSOt7a1b8qyQR68vUixJPang.jpg",
+      "production_companies": [
+        {
+          "id": 81403,
+          "logo_path": null,
+          "name": "Dr. Goor Productions",
+          "origin_country": "US"
+        },
+        {
+          "id": 26727,
+          "logo_path": "/jeTxdjXhzgKZyLr3l9MllkTn3fy.png",
+          "name": "Universal Television",
+          "origin_country": "US"
+        },
+        {
+          "id": 787,
+          "logo_path": "/cCefBs1t7jxtiz3eCxBp9yxrxGx.png",
+          "name": "3 Arts Entertainment",
+          "origin_country": "US"
+        },
+        {
+          "id": 81404,
+          "logo_path": "/w9oFiEoQE96FGKzuWUUN7443Zil.png",
+          "name": "Fremulon",
+          "origin_country": "US"
+        }
+      ],
+      "production_countries": [
+        {
+          "iso_3166_1": "US",
+          "name": "United States of America"
+        }
+      ],
+      "seasons": [
+        {
+          "air_date": "2013-08-11",
+          "episode_count": 13,
+          "id": 55216,
+          "name": "Specials",
+          "overview": "",
+          "poster_path": "/nCMU5lhvctXuYJYtCZHkGdAAf5L.jpg",
+          "season_number": 0,
+          "vote_average": 0
+        },
+        {
+          "air_date": "2013-09-17",
+          "episode_count": 22,
+          "id": 55215,
+          "name": "Season 1",
+          "overview": "Talented but laid-back detective Jake Peralta and his dysfunctional peers struggle to get along under their precinct's strict new captain.",
+          "poster_path": "/6UEUurR6Hb277ij9vZRVjx24Udp.jpg",
+          "season_number": 1,
+          "vote_average": 7.8
+        },
+        {
+          "air_date": "2014-09-28",
+          "episode_count": 23,
+          "id": 62379,
+          "name": "Season 2",
+          "overview": "In Season 2, Jake smokes out a mole in the precinct, Amy finds a flaw in one of Holt's old cases, and the precinct gets antiterrorism training.",
+          "poster_path": "/w3WcxtO3FRxSxE0RAJuAUR2ZAav.jpg",
+          "season_number": 2,
+          "vote_average": 7.7
+        },
+        {
+          "air_date": "2015-09-27",
+          "episode_count": 23,
+          "id": 69590,
+          "name": "Season 3",
+          "overview": "After Holt's transfer, the precinct isn't happy with his replacement. Amy and Jake adjust to romance, while personnel changes shake up the department.",
+          "poster_path": "/nANfJdvb4GRl5p45PTNvpMhaqu7.jpg",
+          "season_number": 3,
+          "vote_average": 7.5
+        },
+        {
+          "air_date": "2016-09-20",
+          "episode_count": 22,
+          "id": 78513,
+          "name": "Season 4",
+          "overview": "While the Nine-Nine tries to keep a lid on things in Brooklyn, Jake and Holt are in a witness protection program in Florida, where Holt is thriving.",
+          "poster_path": "/yxNc7Klk1OTlo9CvLUCbZBGS2LK.jpg",
+          "season_number": 4,
+          "vote_average": 7.5
+        },
+        {
+          "air_date": "2017-09-26",
+          "episode_count": 22,
+          "id": 91751,
+          "name": "Season 5",
+          "overview": "After a nightmare stint in prison for a crime he didn't commit, Jake returns to the Nine-Nine, where personal and professional changes are afoot.",
+          "poster_path": "/fXzMs8IUQtTARFVbckceyXjcnaz.jpg",
+          "season_number": 5,
+          "vote_average": 7.5
+        },
+        {
+          "air_date": "2019-01-10",
+          "episode_count": 18,
+          "id": 114567,
+          "name": "Season 6",
+          "overview": "As Jake and Amy adjust to married life and Holt squares off with a rival, the hijinks, heists and crime-fighting continue at the Nine-Nine.",
+          "poster_path": "/imcxmIEU00wm8n1V4xL8mJYYH5Q.jpg",
+          "season_number": 6,
+          "vote_average": 7.4
+        },
+        {
+          "air_date": "2020-02-06",
+          "episode_count": 13,
+          "id": 135509,
+          "name": "Season 7",
+          "overview": "Jake and Amy rethink their family plans, Holt chafes over his demotion, and the squad sees the return of old pals and nemeses amid the usual shenanigans.",
+          "poster_path": "/mWWqh0Knb01YSY0bZaCX4mEIJJO.jpg",
+          "season_number": 7,
+          "vote_average": 7.7
+        },
+        {
+          "air_date": "2021-08-12",
+          "episode_count": 9,
+          "id": 196086,
+          "name": "Season 8",
+          "overview": "Jake and the squad must try to balance their personal lives and their professional lives over the course of a very difficult year.",
+          "poster_path": "/hgRMSOt7a1b8qyQR68vUixJPang.jpg",
+          "season_number": 8,
+          "vote_average": 6.7
+        }
+      ],
+      "spoken_languages": [
+        {
+          "english_name": "English",
+          "iso_639_1": "en",
+          "name": "English"
+        }
+      ],
+      "status": "Ended",
+      "tagline": "The law. Without the order.",
+      "type": "Scripted",
+      "vote_average": 8.219,
+      "vote_count": 3048
     }
   ]
 }

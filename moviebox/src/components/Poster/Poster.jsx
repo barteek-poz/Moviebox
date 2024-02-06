@@ -30,7 +30,7 @@ export const Poster = ({ titleData, media }) => {
               <img src={STAR_ICON} alt="star-icon" />
               <p>{ratingFormat(titleData.vote_average)}</p>
             </div>
-            <p>{overviewFormat(titleData.overview)}</p>
+            <p className={styles.overview}>{overviewFormat(titleData.overview)}</p>
           </Link>
 
           <button className={styles.addBtn} onClick={(e)=> {
