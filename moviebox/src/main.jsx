@@ -11,12 +11,11 @@ import { tvShowsLoader } from "./loaders/tvShowsLoader.js";
 import { Streaming } from "./pages/Streaming/Streaming.jsx";
 import { streamingLoader } from "./loaders/streamingLoader.js";
 import { Watchlist } from "./pages/Watchlist/Watchlist.jsx";
-import { watchlistLoader } from "./loaders/watchlistLoader.js";
 import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
 import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
 import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
-import {  IsOnWatchlistProvider } from "./context/IsOnWatchlistContext.jsx";
+import { WatchlistProvider } from "./context/WatchlistContext.jsx";
 
 //zmienic routing tak zeby byly childreny a nie osobne sciezki
 
@@ -44,7 +43,6 @@ const router = createBrowserRouter([
   {
     path: "/watchlist",
     element: <Watchlist />,
-    loader: watchlistLoader,
   },
   {
     path: ":category?/:search?/:media/:titleId",
@@ -64,8 +62,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <IsOnWatchlistProvider>
+    <WatchlistProvider>
       <RouterProvider router={router}></RouterProvider>
-    </IsOnWatchlistProvider>
+    </WatchlistProvider>
   </React.StrictMode>
 );

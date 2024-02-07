@@ -8,7 +8,6 @@ import { dateFormat } from "../../helpers/dateFormat";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { directorFormat } from "../../helpers/directorFormat";
 import { runtimeFormat } from "../../helpers/runtimeFormat";
-import { addToWatchlist } from "../../helpers/addToWatchlist";
 import NO_POSTER from "../../assets/no_poster.png";
 
 export const TitlePage = () => {
@@ -21,7 +20,7 @@ export const TitlePage = () => {
       }
     })
     .slice(0, 3);
-  console.log(loaderData);
+ console.log(loaderData)
   return (
     <MainLayout>
       <CenteredContent>
@@ -42,7 +41,7 @@ export const TitlePage = () => {
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  addToWatchlist(loaderData.details);
+                 
                 }}
                 className={styles.btnAdd}>
                 Add to watchlist <img src={ADD_ICON} alt="add-icon" />
@@ -53,7 +52,7 @@ export const TitlePage = () => {
                 {dateFormat(loaderData.details.release_date) ||
                   dateFormat(loaderData.details.first_air_date)}
               </p>
-              <p>{loaderData.media}</p>
+              <p>{loaderData.mediaType}</p>
               <p>{runtimeFormat(loaderData.details)}</p>
             </div>
             <div className={styles.rowRating}>

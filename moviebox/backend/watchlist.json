@@ -1,110 +1,25 @@
 {
   "titles": [
     {
-      "id": 22980,
+      "id": 572802,
       "adult": false,
-      "backdrop_path": "/butPVWgcbtAjL9Z7jU7Xj1KA8KD.jpg",
-      "genre_ids": [
-        10767,
-        35
-      ],
-      "origin_country": [
-        "US"
-      ],
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
       "original_language": "en",
-      "original_name": "Watch What Happens Live with Andy Cohen",
-      "overview": "Bravo network executive Andy Cohen discusses pop culture topics with celebrities and reality show personalities.",
-      "popularity": 3899.929,
-      "poster_path": "/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
-      "first_air_date": "2009-07-16",
-      "name": "Watch What Happens Live with Andy Cohen",
-      "vote_average": 5.8,
-      "vote_count": 22
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
-      "popularity": 1665.323,
-      "release_date": "2023-12-06",
-      "video": false,
-      "vote_average": 7.243,
-      "vote_count": 1870
-    },
-    {
-      "id": 1022796,
-      "adult": false,
-      "backdrop_path": "/ehumsuIBbgAe1hg343oszCLrAfI.jpg",
-      "title": "Wish",
-      "original_language": "en",
-      "original_title": "Wish",
-      "overview": "Asha, a sharp-witted idealist, makes a wish so powerful that it is answered by a cosmic force – a little ball of boundless energy called Star. Together, Asha and Star confront a most formidable foe - the ruler of Rosas, King Magnifico - to save her community and prove that when the will of one courageous human connects with the magic of the stars, wondrous things can happen.",
-      "poster_path": "/AcoVfiv1rrWOmAdpnAMnM56ki19.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        16,
-        10751,
-        14,
-        12
-      ],
-      "popularity": 1064.652,
-      "release_date": "2023-11-13",
-      "video": false,
-      "vote_average": 6.7,
-      "vote_count": 633
-    },
-    {
-      "id": 609681,
-      "adult": false,
-      "backdrop_path": "/xjNSZnwQ8gFwyxckgKKtODBXFT7.jpg",
-      "title": "The Marvels",
-      "original_language": "en",
-      "original_title": "The Marvels",
-      "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-      "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 1220.928,
-      "release_date": "2023-11-08",
-      "video": false,
-      "vote_average": 6.364,
-      "vote_count": 1408
-    },
-    {
-      "id": 866398,
-      "adult": false,
-      "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
-      "title": "The Beekeeper",
-      "original_language": "en",
-      "original_title": "The Beekeeper",
-      "overview": "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
-      "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
       "media_type": "movie",
       "genre_ids": [
         28,
-        53,
-        18
+        12,
+        14
       ],
-      "popularity": 4578.602,
-      "release_date": "2024-01-10",
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
       "video": false,
-      "vote_average": 7.452,
-      "vote_count": 714
+      "vote_average": 6.972,
+      "vote_count": 1454
     },
     {
       "id": 572802,
@@ -124,50 +39,8 @@
       "popularity": 1373.572,
       "release_date": "2023-12-20",
       "video": false,
-      "vote_average": 7,
-      "vote_count": 1437
-    },
-    {
-      "id": 866398,
-      "adult": false,
-      "backdrop_path": "/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
-      "title": "The Beekeeper",
-      "original_language": "en",
-      "original_title": "The Beekeeper",
-      "overview": "One man’s campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
-      "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        28,
-        53,
-        18
-      ],
-      "popularity": 4578.602,
-      "release_date": "2024-01-10",
-      "video": false,
-      "vote_average": 7.452,
-      "vote_count": 714
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
-      "popularity": 1665.323,
-      "release_date": "2023-12-06",
-      "video": false,
-      "vote_average": 7.243,
-      "vote_count": 1870
+      "vote_average": 6.972,
+      "vote_count": 1454
     },
     {
       "id": 572802,
@@ -187,92 +60,8 @@
       "popularity": 1373.572,
       "release_date": "2023-12-20",
       "video": false,
-      "vote_average": 6.985,
-      "vote_count": 1438
-    },
-    {
-      "id": 609681,
-      "adult": false,
-      "backdrop_path": "/xjNSZnwQ8gFwyxckgKKtODBXFT7.jpg",
-      "title": "The Marvels",
-      "original_language": "en",
-      "original_title": "The Marvels",
-      "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-      "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 1220.928,
-      "release_date": "2023-11-08",
-      "video": false,
-      "vote_average": 6.361,
-      "vote_count": 1409
-    },
-    {
-      "id": 609681,
-      "adult": false,
-      "backdrop_path": "/xjNSZnwQ8gFwyxckgKKtODBXFT7.jpg",
-      "title": "The Marvels",
-      "original_language": "en",
-      "original_title": "The Marvels",
-      "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-      "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 1220.928,
-      "release_date": "2023-11-08",
-      "video": false,
-      "vote_average": 6.361,
-      "vote_count": 1409
-    },
-    {
-      "id": 609681,
-      "adult": false,
-      "backdrop_path": "/xjNSZnwQ8gFwyxckgKKtODBXFT7.jpg",
-      "title": "The Marvels",
-      "original_language": "en",
-      "original_title": "The Marvels",
-      "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-      "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 1220.928,
-      "release_date": "2023-11-08",
-      "video": false,
-      "vote_average": 6.361,
-      "vote_count": 1409
-    },
-    {
-      "id": 609681,
-      "adult": false,
-      "backdrop_path": "/xjNSZnwQ8gFwyxckgKKtODBXFT7.jpg",
-      "title": "The Marvels",
-      "original_language": "en",
-      "original_title": "The Marvels",
-      "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-      "poster_path": "/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        878,
-        12,
-        28
-      ],
-      "popularity": 1220.928,
-      "release_date": "2023-11-08",
-      "video": false,
-      "vote_average": 6.361,
-      "vote_count": 1409
+      "vote_average": 6.972,
+      "vote_count": 1454
     },
     {
       "id": 572802,
@@ -292,93 +81,8 @@
       "popularity": 1373.572,
       "release_date": "2023-12-20",
       "video": false,
-      "vote_average": 6.985,
-      "vote_count": 1438
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
-      "popularity": 1665.323,
-      "release_date": "2023-12-06",
-      "video": false,
-      "vote_average": 7.243,
-      "vote_count": 1870
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
-      "popularity": 1665.323,
-      "release_date": "2023-12-06",
-      "video": false,
-      "vote_average": 7.243,
-      "vote_count": 1870
-    },
-    {
-      "id": 1022796,
-      "adult": false,
-      "backdrop_path": "/ehumsuIBbgAe1hg343oszCLrAfI.jpg",
-      "title": "Wish",
-      "original_language": "en",
-      "original_title": "Wish",
-      "overview": "Asha, a sharp-witted idealist, makes a wish so powerful that it is answered by a cosmic force – a little ball of boundless energy called Star. Together, Asha and Star confront a most formidable foe - the ruler of Rosas, King Magnifico - to save her community and prove that when the will of one courageous human connects with the magic of the stars, wondrous things can happen.",
-      "poster_path": "/AcoVfiv1rrWOmAdpnAMnM56ki19.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        16,
-        10751,
-        14,
-        12
-      ],
-      "popularity": 1064.652,
-      "release_date": "2023-11-13",
-      "video": false,
-      "vote_average": 6.7,
-      "vote_count": 633
-    },
-    {
-      "id": 787699,
-      "adult": false,
-      "backdrop_path": "/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
-      "title": "Wonka",
-      "original_language": "en",
-      "original_title": "Wonka",
-      "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-      "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
-      "media_type": "movie",
-      "genre_ids": [
-        35,
-        10751,
-        14
-      ],
-      "popularity": 1665.323,
-      "release_date": "2023-12-06",
-      "video": false,
-      "vote_average": 7.243,
-      "vote_count": 1870
+      "vote_average": 6.972,
+      "vote_count": 1454
     },
     {
       "id": 572802,
@@ -398,8 +102,176 @@
       "popularity": 1373.572,
       "release_date": "2023-12-20",
       "video": false,
-      "vote_average": 6.985,
-      "vote_count": 1438
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
+    },
+    {
+      "id": 572802,
+      "adult": false,
+      "backdrop_path": "/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+      "title": "Aquaman and the Lost Kingdom",
+      "original_language": "en",
+      "original_title": "Aquaman and the Lost Kingdom",
+      "overview": "Black Manta seeks revenge on Aquaman for his father's death. Wielding the Black Trident's power, he becomes a formidable foe. To defend Atlantis, Aquaman forges an alliance with his imprisoned brother. They must protect the kingdom.",
+      "poster_path": "/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "media_type": "movie",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "popularity": 1373.572,
+      "release_date": "2023-12-20",
+      "video": false,
+      "vote_average": 6.972,
+      "vote_count": 1454
     }
   ]
 }

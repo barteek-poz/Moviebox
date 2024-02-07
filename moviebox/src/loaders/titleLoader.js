@@ -26,11 +26,13 @@ export const titleLoader = async (params) => {
         return title.json();
       })
     );
+  
     return {
       details: titleData[0],
       cast: titleData[1],
       streaming: titleData[2].results.PL,
-      media: 'Movie'
+      media: params.media,
+      mediaType: "Movie",
     };
   } else if (params.media === "tv") {
     const titlesFetch = await Promise.all([
@@ -52,11 +54,13 @@ export const titleLoader = async (params) => {
         return title.json();
       })
     );
+    
     return {
       details: titleData[0],
       cast: titleData[1],
       streaming: titleData[2].results.PL,
-      media: 'TV Show'
+      media: params.media,
+      mediaType: "TV Show",
     };
   }
 };
