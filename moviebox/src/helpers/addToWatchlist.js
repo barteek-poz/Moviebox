@@ -1,5 +1,4 @@
 export const addToWatchlist = (titleData) => {
-console.log(titleData)
   fetch("http://localhost:3000/titles", {
     method: "POST",
     mode: "cors",
@@ -7,5 +6,5 @@ console.log(titleData)
     Headers:{
         "Content-Type": "application/json; charset=UTF-8"
     }
-  });
+  }).then(res => res.json());
 };

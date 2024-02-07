@@ -2,12 +2,13 @@ import { useLoaderData } from "react-router-dom";
 import { MainLayout } from "../../components/MainLayout/MainLayout";
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
 import { Poster } from "../../components/Poster/Poster";
-import styles from "../Watchlist/Watchlist.module.css"
+import styles from "../Watchlist/Watchlist.module.css";
+import { useContext } from "react";
+import { IsOnWatchlistContext } from "../../context/IsOnWatchlistContext";
 
 export const Watchlist = () => {
   const loaderData = useLoaderData();
-  console.log(loaderData);
-
+ 
   return (
     <MainLayout>
       <CenteredContent>
@@ -22,14 +23,10 @@ export const Watchlist = () => {
           </select>
         </div>
         <div className={styles.titleList}>
-        {loaderData.map(title => {
-          return  <Poster key={title.id}
-          titleData={title} 
-        />
-        })}
+          {loaderData.map((title) => {
+            return <Poster  key={title.id} titleData={title} />;
+          })}
         </div>
-        
-        
       </CenteredContent>
     </MainLayout>
   );

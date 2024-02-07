@@ -16,12 +16,11 @@ import { TitlePage } from "./pages/TitlePage/TitlePage.jsx";
 import { titleLoader } from "./loaders/titleLoader.js";
 import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
 import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
-
+import {  IsOnWatchlistProvider } from "./context/IsOnWatchlistContext.jsx";
 
 //zmienic routing tak zeby byly childreny a nie osobne sciezki
 
 const router = createBrowserRouter([
- 
   {
     path: "/",
     element: <MainPage />,
@@ -57,15 +56,16 @@ const router = createBrowserRouter([
   {
     path: "/search/:param",
     element: <SearchPage />,
-    loader: ({params}) => {
-      return searchTitleLoader(params)
-    }
-  
+    loader: ({ params }) => {
+      return searchTitleLoader(params);
+    },
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <IsOnWatchlistProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </IsOnWatchlistProvider>
   </React.StrictMode>
 );

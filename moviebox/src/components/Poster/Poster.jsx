@@ -1,15 +1,17 @@
 import styles from "../Poster/Poster.module.css";
 import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
-import { Link} from "react-router-dom";
-import { useState } from "react";
+import { Link, Form } from "react-router-dom";
+import { useContext, useState } from "react";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { overviewFormat } from "../../helpers/overviewFormat";
-import NO_POSTER from "../../assets/no_poster.png";
 import { addToWatchlist } from "../../helpers/addToWatchlist";
+import NO_POSTER from "../../assets/no_poster.png";
+import { IsOnWatchlistContext } from "../../context/IsOnWatchlistContext";
+
 export const Poster = ({ titleData, media }) => {
   const [showInfo, setShowInfo] = useState(false);
-
+  const ctx = useContext(IsOnWatchlistContext);
   return (
     <div
       className={styles.background}
@@ -30,15 +32,19 @@ export const Poster = ({ titleData, media }) => {
               <img src={STAR_ICON} alt="star-icon" />
               <p>{ratingFormat(titleData.vote_average)}</p>
             </div>
-            <p className={styles.overview}>{overviewFormat(titleData.overview)}</p>
+            <p className={styles.overview}>
+              {overviewFormat(titleData.overview)}
+            </p>
           </Link>
-
-          <button className={styles.addBtn} onClick={(e)=> {
-            e.stopPropagation()
-            addToWatchlist(titleData)
-          }}>
-            Add to watchlist <img src={ADD_ICON} alt="add-icon" />
-          </button>
+          <Form
+            onSubmit={(e) => {
+              
+              ctx.addToWatchlist(titleData);
+            }}>
+            <button className={styles.addBtn}>
+              Add to watchlist <img src={ADD_ICON} alt="add-icon" />
+            </button>
+          </Form>
         </div>
       )}
     </div>
