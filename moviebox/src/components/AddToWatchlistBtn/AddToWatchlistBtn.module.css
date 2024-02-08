@@ -1,0 +1,17 @@
+.btnAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 2rem;
+    padding: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    border: none;
+    transition: .3s;
+  }
+
+  .btnAdd img {
+    width: 20px;
+    height: 20px;
+  }

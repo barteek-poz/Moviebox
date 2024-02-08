@@ -1,16 +1,13 @@
 import styles from "../Poster/Poster.module.css";
-import ADD_ICON from "../../assets/add.svg";
 import STAR_ICON from "../../assets/star.svg";
 import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { overviewFormat } from "../../helpers/overviewFormat";
 import NO_POSTER from "../../assets/no_poster.png";
-import { WatchlistContext } from "../../context/WatchlistContext";
 
 export const Poster = ({ titleData, media }) => {
   const [showInfo, setShowInfo] = useState(false);
-  const ctx = useContext(WatchlistContext);
 
   return (
     <div
@@ -23,8 +20,8 @@ export const Poster = ({ titleData, media }) => {
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}>
       {showInfo && (
-        <div className={styles.infoBox}>
-          <Link to={`/${titleData.media_type || media}/${titleData.id}`}>
+        
+          <Link className={styles.infoBox} to={`/${titleData.media_type || titleData.media || media}/${titleData.id}`}>
             <div className={styles.firstRow}>
               <span>{titleData.title || titleData.name}</span>
             </div>
@@ -36,14 +33,8 @@ export const Poster = ({ titleData, media }) => {
               {overviewFormat(titleData.overview)}
             </p>
           </Link>
-          <button
-            className={styles.addBtn}
-            onClick={() => {
-              ctx.addToWatchlist(titleData, media);
-            }}>
-            Add to watchlist <img src={ADD_ICON} alt="add-icon" />
-          </button>
-        </div>
+          
+        
       )}
     </div>
   );

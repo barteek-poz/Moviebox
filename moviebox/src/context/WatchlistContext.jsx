@@ -13,8 +13,7 @@ export const WatchlistProvider = (props) => {
     localStorage.setItem("watchlist", JSON.stringify(watchlist));
   }, [watchlist]);
 
-  const addToWatchlist = (title, media) => {
-    title.media = media;
+  const addToWatchlist = (title) => {
     const checkTitle = watchlist.every((item) => {
       return item.id !== title.id;
     });
