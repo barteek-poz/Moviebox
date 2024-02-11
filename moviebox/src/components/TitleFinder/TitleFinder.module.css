@@ -1,5 +1,10 @@
+
 .finderHeader {
     margin-left: 50px;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    padding: 10px;
+    border-radius: 10px;
 }
 .form {
   display: flex;
@@ -32,6 +37,10 @@
   background-color: transparent;
   border: none;
 }
+.icon:hover {
+  background-color: transparent;
+}
+
 
 .error {
   font-size: 1.6rem;

@@ -61,6 +61,7 @@ export const TitleFinder = () => {
           </p>
         )}
       </Form>
+
       {titleData && (
         <div className={styles.finder}>
           <PosterBig title={titleData} media={titleMedia} />

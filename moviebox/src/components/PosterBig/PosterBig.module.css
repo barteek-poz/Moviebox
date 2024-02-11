@@ -24,13 +24,7 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.addBtn {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  background-color: transparent;
-  border: none;
-}
+
 .posterInfo span {
   font-size: 3rem;
   font-weight: 700;
@@ -47,6 +41,10 @@
 
 .posterInfo .points {
   font-size: 3rem;
+}
+.genres {
+  display: flex;
+  flex-wrap: wrap;
 }
 .genre {
   font-size: 1.6rem;

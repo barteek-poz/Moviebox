@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ratingFormat } from "../../helpers/ratingFormat";
-import ADD_ICON from "../../assets/add.svg";
+
 import STAR_ICON from "../../assets/star.svg";
 import styles from "../PosterBig/PosterBig.module.css";
 import { overviewFormat } from "../../helpers/overviewFormat";
@@ -8,7 +8,7 @@ import { genreType } from "../../helpers/genreType";
 
 export const PosterBig = ({ title, media }) => {
   const genres = genreType(title.genre_ids);
-
+console.log(title,media)
   return (
     <div className={styles.posterBox}>
       <Link
@@ -19,14 +19,12 @@ export const PosterBig = ({ title, media }) => {
         }}
       />
       <div className={styles.posterInfo}>
-        <button className={styles.addBtn}>
-          <img src={ADD_ICON} alt="add-icon" />
-        </button>
-        <Link to={`${title.media_type}/${title.id}`}>
+  
+        <Link to={`${title.media_type || media}/${title.id}`}>
           <span>{title.title || title.name}</span>
         </Link>
 
-        <div>
+        <div className={styles.genres}>
           {genres.map((genre) => {
             return (
               <p key={genre.id} className={styles.genre}>

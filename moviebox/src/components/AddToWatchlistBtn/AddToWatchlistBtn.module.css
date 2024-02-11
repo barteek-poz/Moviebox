@@ -1,8 +1,4 @@
 .btnAdd {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
     font-size: 2rem;
     padding: 8px;
     font-family: inherit;
@@ -12,6 +8,7 @@
   }
 
   .btnAdd img {
-    width: 20px;
-    height: 20px;
+
+    width: 16px;
+    height: 16px;
   }

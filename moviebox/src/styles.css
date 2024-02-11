@@ -56,7 +56,7 @@ button {
   transition: .3s;
   border-radius: 10px;
 }
-button:hover, button:focus, button:hover svg {
+button:hover, button:hover svg {
    background-color: var(--color-white);
   color: var(--color-black);
   fill: var(--color-white);
@@ -75,6 +75,7 @@ select {
 .swiper-button-prev::after {
   color: var(--color-white);
 }
+
 
 
 .titleSwiper {
