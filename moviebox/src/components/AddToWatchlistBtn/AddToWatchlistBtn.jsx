@@ -1,15 +1,16 @@
 import { useContext, useState } from "react";
 import { WatchlistContext } from "../../context/WatchlistContext";
-import styles from "../AddToWatchlistBtn/AddToWatchlistBtn.module.css";
 import ADD_ICON from "../../assets/add.svg";
-export const AddToWatchlistBtn = ({ titleData, media}) => {
+export const AddToWatchlistBtn = ({ titleData, media }) => {
   const ctx = useContext(WatchlistContext);
-  const [isOnWatchlist, setIsOnWatchlist] = useState(ctx.watchlist.some(element => {
-    if(element.id === titleData.details.id) {
-      return true
-    }
-    return false
-  }));
+  const [isOnWatchlist, setIsOnWatchlist] = useState(
+    ctx.watchlist.some((element) => {
+      if (element.id === titleData.details.id) {
+        return true;
+      }
+      return false;
+    })
+  );
   const watchlistHandler = () => {
     if (isOnWatchlist) {
       ctx.removeFromWatchlist(titleData.details);
@@ -19,14 +20,17 @@ export const AddToWatchlistBtn = ({ titleData, media}) => {
       setIsOnWatchlist(true);
     }
   };
-  console.log(isOnWatchlist)
+  console.log(isOnWatchlist);
   return (
-    <button onClick={watchlistHandler} className={styles.btnAdd}>
+    <button
+      onClick={watchlistHandler}
+      className="text-xl p-2 font-medium border-none bg-yellow text-black  rounded-lg transition duration-300">
       {isOnWatchlist ? (
-        "Remove from watchlist"
+        <p className="text-black">Remove from watchlist</p>
       ) : (
-        <p>
-          Add to watchlist <img src={ADD_ICON} alt="add-icon" />
+        <p className="text-black">
+          Add to watchlist{" "}
+          <img src={ADD_ICON} alt="add-icon" className="w-4 h-4" />
         </p>
       )}
     </button>

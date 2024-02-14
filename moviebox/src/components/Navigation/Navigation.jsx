@@ -6,7 +6,6 @@ import { useNavSearch } from "../../hooks/useNavSearch";
 import { useEffect, useRef, useState } from "react";
 import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 
-
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
@@ -36,7 +35,7 @@ export const Navigation = () => {
     <div className={styles.navBackground}>
       <CenteredContent>
         <nav className={styles.navBar}>
-          <Link to="/main">
+          <Link to="/">
             <img src={logo} alt="logo" className={styles.logo} />
           </Link>
           <div className={styles.navLinks}>
@@ -88,9 +87,8 @@ export const Navigation = () => {
                         key={title.id}
                         onClick={() => {
                           setIsFocused(false);
-                         
+                          
                         }}>
-                        {" "}
                         <SearchedTitle titleData={title} />
                       </div>
                     );

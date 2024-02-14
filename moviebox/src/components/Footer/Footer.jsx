@@ -1,17 +1,15 @@
-import styles from "../Footer/Footer.module.css";
-
 import { CenteredContent } from "../CenteredContent/CenteredContent";
 import { FooterForm } from "../FooterForm/FooterForm";
 import { FooterIcons } from "../FooterIcons/FooterIcons";
 
 export const Footer = () => {
   return (
-    <div className={styles.footerBackground}>
+    <div className="w-lvw bg-black border-t border-t-yellow ">
       <CenteredContent>
-        <div className={styles.footer}>
-          <div className={styles.footerSubs}>
+        <div className="flex justify-between items-center py-2.5 pb-10 ">
+          <div>
             <h3>Stay up to date!</h3>
-            <p className={styles.footerText}>
+            <p className="text-base font-normal text-white mt-4 mb-7">
               Join our newsletter and never miss the most important premiers of
               the week!
             </p>

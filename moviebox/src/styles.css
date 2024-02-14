@@ -3,7 +3,7 @@
   --color-black: rgba(0, 0, 0, 1);
   --color-blur: rgba(0, 0, 0, 0.5);
   --color-white: rgba(255, 255, 255, 1);
-  --color-yellow: rgba(255, 199, 0);
+  --color-yellow: rgb(255, 199, 0);
   --main-font: "Roboto", sans-serif;
  
 }
@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   font-family: var(--main-font);
   background-color: var(--color-main);
 }
@@ -48,15 +48,15 @@ a {
   text-decoration: none;
 }
 
-button {
+/* button {
   font-family: inherit;
   color: var(--color-black);
   background-color: var(--color-yellow);
   cursor: pointer;
   transition: .3s;
   border-radius: 10px;
-}
-button:hover, button:hover svg {
+} */ */
+/* button:hover, button:hover svg {
    background-color: var(--color-white);
   color: var(--color-black);
   fill: var(--color-white);

@@ -1,4 +1,4 @@
-import { MainLayout } from "../../components/MainLayout/MainLayout";
+
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
 import { Poster } from "../../components/Poster/Poster";
 import styles from "../Watchlist/Watchlist.module.css";
@@ -13,7 +13,7 @@ export const Watchlist = () => {
   const watchlistFilter = filterWatchlist(ctx.watchlist, filter);
   console.log(watchlistFilter);
   return (
-    <MainLayout>
+    
       <CenteredContent>
         <div className={styles.header}>
           <h2>Your Watchlist</h2>
@@ -42,6 +42,6 @@ export const Watchlist = () => {
               })}
         </div>
       </CenteredContent>
-    </MainLayout>
+   
   );
 };
