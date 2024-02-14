@@ -1,6 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
-import { MainLayout } from "../../components/MainLayout/MainLayout";
 import { TitleDetails } from "../../components/TitleDetails/TitleDetails";
 import styles from "../TitlePage/TitlePage.module.css";
 import NO_POSTER from "../../assets/no_poster.png";
@@ -10,7 +9,7 @@ export const TitlePage = () => {
   const params = useParams();
   
   return (
-    <MainLayout>
+   
       <CenteredContent>
         <div className={styles.titleBox}>
           <div
@@ -24,6 +23,6 @@ export const TitlePage = () => {
           <TitleDetails loaderData={loaderData} params={params}/>
         </div>
       </CenteredContent>
-    </MainLayout>
+  
   );
 };

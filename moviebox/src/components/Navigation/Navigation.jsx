@@ -6,7 +6,7 @@ import { useNavSearch } from "../../hooks/useNavSearch";
 import { useEffect, useRef, useState } from "react";
 import { SearchedTitle } from "../SearchedTitle/SearchedTitle";
 
-//naprawic stan active linkow
+
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
@@ -36,7 +36,7 @@ export const Navigation = () => {
     <div className={styles.navBackground}>
       <CenteredContent>
         <nav className={styles.navBar}>
-          <Link to="/">
+          <Link to="/main">
             <img src={logo} alt="logo" className={styles.logo} />
           </Link>
           <div className={styles.navLinks}>

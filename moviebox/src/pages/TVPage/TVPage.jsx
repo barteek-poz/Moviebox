@@ -1,6 +1,5 @@
 import { useLoaderData } from "react-router-dom";
 import { Hero } from "../../components/Hero/Hero";
-import { MainLayout } from "../../components/MainLayout/MainLayout";
 import { TitlesSection } from "../../components/TitlesSection/TitlesSection";
 
 export const TVPage = () => {
@@ -9,11 +8,15 @@ export const TVPage = () => {
   console.log(loaderData);
 
   return (
-    <MainLayout>
+    <>
       <Hero titlesArr={heroTitles} />
-      <TitlesSection title="New episodes" titlesArr={loaderData.newEpisodes} media='tv'/>
+      <TitlesSection
+        title="New episodes"
+        titlesArr={loaderData.newEpisodes}
+        media="tv"
+      />
       <TitlesSection title="Popular" titlesArr={loaderData.popularTV} />
-      <TitlesSection title="Top 50" titlesArr={loaderData.topTV} media='tv' />
-    </MainLayout>
+      <TitlesSection title="Top 50" titlesArr={loaderData.topTV} media="tv" />
+    </>
   );
 };

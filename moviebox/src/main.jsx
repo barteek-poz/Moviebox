@@ -16,48 +16,57 @@ import { titleLoader } from "./loaders/titleLoader.js";
 import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
 import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
 import { WatchlistProvider } from "./context/WatchlistContext.jsx";
+import { MainLayout } from "./components/MainLayout/MainLayout.jsx";
 
 //zmienic routing tak zeby byly childreny a nie osobne sciezki
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage />,
-    loader: mainPageLoader,
-  },
-  {
-    path: "/movies",
-    element: <MoviesPage />,
-    loader: moviesLoader,
-  },
-  {
-    path: "/tv",
-    element: <TVPage />,
-    loader: tvShowsLoader,
-  },
-  {
-    path: "/streaming",
-    element: <Streaming />,
-    loader: streamingLoader,
-  },
-  {
-    path: "/watchlist",
-    element: <Watchlist />,
-  },
-  {
-    path: ":category?/:search?/:media/:titleId",
-    element: <TitlePage />,
-    loader: ({ params }) => {
-      return titleLoader(params);
+    element: <MainLayout />,
+    
+   children: [
+    {
+      path: "/main",
+      element: <MainPage />,
+      loader: mainPageLoader,
     },
-  },
-  {
-    path: "/search/:param",
-    element: <SearchPage />,
-    loader: ({ params }) => {
-      return searchTitleLoader(params);
+    {
+      path: "/movies",
+      element: <MoviesPage />,
+      loader: moviesLoader,
     },
+    {
+      path: "/tv",
+      element: <TVPage />,
+      loader: tvShowsLoader,
+    },
+    {
+      path: "/streaming",
+      element: <Streaming />,
+      loader: streamingLoader,
+    },
+    {
+      path: "/watchlist",
+      element: <Watchlist />,
+    },
+    {
+      path: ":category?/:search?/:media/:titleId",
+      element: <TitlePage />,
+      loader: ({ params }) => {
+        return titleLoader(params);
+      },
+    },
+    {
+      path: "/search/:param",
+      element: <SearchPage />,
+      loader: ({ params }) => {
+        return searchTitleLoader(params);
+      },
+    },
+   ]
   },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
