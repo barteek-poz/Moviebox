@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 import { Footer } from "../Footer/Footer";
 import { Navigation } from "../Navigation/Navigation";
-import styles from "./MainLayout.module.css"
+
 export const MainLayout = () => {
   return (
-    <div className={styles.layout}>
+    <div className="flex flex-col h-lvh w-lvw">
       <Navigation />
       
       <Outlet/>

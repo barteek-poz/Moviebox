@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+    @apply m-0;
+    @apply p-0;
+  }
+
+  html {
+    font-family: "Roboto", sans-serif;
+    @apply bg-main;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-white;
+    @apply font-bold;
+    @apply uppercase;
+  }
+
+  h1 {
+    @apply text-4xl;
+    @apply tracking-wider;
+  }
+  h2 {
+    @apply inline-block;
+    @apply text-2xl;
+    @apply border-b-2;
+    @apply border-b-yellow;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+
+  a {
+    @apply no-underline;
+  }
+  button,
+  select {
+    @apply bg-yellow;
+    @apply rounded-lg;
+    @apply border-none;
+    @apply text-black;
+  }
+  button {
+   
+    @apply transition;
+    @apply duration-300;
+  }
+  
+
+  select {
+    @apply h-9;
+    
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: var(--color-white);
+  }
+
+  .titleSwiper {
+    position: static !important;
+    display: grid !important;
+    margin-left: 50px;
+  }
+  .titleSwiper [class^="swiper-button-"] {
+    inset: initial;
+    margin: 0;
+    align-self: center;
+  }
+  .titleSwiper .swiper-button-prev {
+    justify-self: start;
+    margin-left: -50px;
+  }
+  .titleSwiper .swiper-button-next {
+    justify-self: end;
+    margin-left: 100px;
+  }
+}

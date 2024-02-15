@@ -29,7 +29,7 @@ export const FooterForm = () => {
             setEmailTouched(false);
           }}
         />
-        <button className="bg-yellow text-black text-base flex items-center gap-1 border-none rounded-lg p-1.5 transition duration-300 hover:bg-white group">
+        <button className="text-base flex items-center gap-1  p-1.5  hover:bg-white group">
           <svg
             className="fill-yellow group-hover:fill-white transition duration-300 "
             width="20"

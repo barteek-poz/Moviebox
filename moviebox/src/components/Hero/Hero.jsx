@@ -1,4 +1,3 @@
-import { CenteredContent } from "../CenteredContent/CenteredContent";
 import { HeroBox } from "../HeroBox/HeroBox";
 
 //swiper
@@ -11,7 +10,7 @@ import "swiper/css/scrollbar";
 
 export const Hero = ({titlesArr}) => {
   return (
-    <CenteredContent>
+    <div className="w-full h-full max-w-2500 mx-auto">
       <Swiper
         autoplay={{
           delay: 8000,
@@ -43,6 +42,6 @@ export const Hero = ({titlesArr}) => {
           );
         })}
       </Swiper>
-    </CenteredContent>
+    </div>
   );
 };

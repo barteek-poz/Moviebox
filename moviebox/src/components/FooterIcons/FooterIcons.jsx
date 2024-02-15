@@ -2,27 +2,27 @@ import LOGO_ICON from "../../assets/logo.svg";
 import FACEBOOK_ICON from "../../assets/facebook.svg";
 import TWITTER_ICON from "../../assets/twitter.svg";
 import INSTAGRAM_ICON from "../../assets/instagram.svg";
-import styles from '../FooterIcons/FooterIcons.module.css'
+
 export const FooterIcons = () => {
   return (
-    <div className={styles.footerIcons}>
-      <img src={LOGO_ICON} alt="logo-icon" className={styles.logo} />
-      <div>
+    <div className="flex flex-col items-end gap-1">
+      <img src={LOGO_ICON} alt="logo-icon" className="w-32 h-12"/>
+      <div className="flex">
         <a href="#">
           <img
             src={FACEBOOK_ICON}
             alt="facebook-icon"
-            className={styles.icon}
+            
           />
         </a>
         <a href="#">
-          <img src={TWITTER_ICON} alt="twitter-icon" className={styles.icon} />
+          <img src={TWITTER_ICON} alt="twitter-icon" className="ml-3" />
         </a>
         <a href="#">
           <img
             src={INSTAGRAM_ICON}
             alt="instagram-icon"
-            className={styles.icon}
+            className="ml-3"
           />
         </a>
       </div>
