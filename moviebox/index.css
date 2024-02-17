@@ -11,13 +11,13 @@
 
   html {
     font-family: "Roboto", sans-serif;
-    @apply bg-main;
+    @apply bg-black;
   }
 
   h1,
   h2,
   h3 {
-    @apply text-white;
+    @apply text-yellow;
     @apply font-bold;
     @apply uppercase;
   }
@@ -64,7 +64,7 @@
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    color: var(--color-white);
+    color: black;
   }
 
   .titleSwiper {
