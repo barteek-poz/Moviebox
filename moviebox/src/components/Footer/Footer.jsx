@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className="w-lvw bg-yellow border-t border-t-yellow ">
       <CenteredContent>
-        <div className="flex justify-between items-center py-2.5 pb-10 ">
+        <div className="flex justify-between items-center py-2.5 pb-2 ">
           <div>
             <h3 className="text-black">Stay up to date!</h3>
             <p className="text-base font-normal text-black mt-4 mb-7">

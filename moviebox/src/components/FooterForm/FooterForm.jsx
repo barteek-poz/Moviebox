@@ -18,7 +18,7 @@ export const FooterForm = () => {
   const validationCondition = !emailValid && emailTouched ? true : false;
   return (
     <Form onSubmit={emailValidationHandler}>
-      <div className="flex items-end gap-2.5">
+      <div className="INPUT flex items-end gap-2.5">
         <input
           className="text-base placeholder:text-black w-80 pt-2 pl-2  outline-none bg-transparent border-b border-b-black focus:outline-black focus:outline-1 focus:rounded-lg focus:border-b-transparent"
           type="text"
@@ -29,8 +29,8 @@ export const FooterForm = () => {
             setEmailTouched(false);
           }}
         />
-        <div className="border rounded-lg border-black transition duration-300 hover:border-transparent">
-        <button className="text-base flex items-center gap-1  p-1.5 border border-black  hover:bg-white group ">
+        <div className="BUTTON-DIV border rounded-lg border-black transition duration-300 hover:border-transparent">
+        <button className="BUTTON text-base flex items-center gap-1  p-1.5 border border-black  hover:bg-white group ">
           <svg
             className="fill-yellow group-hover:fill-white transition duration-300 "
             width="20"
@@ -52,7 +52,7 @@ export const FooterForm = () => {
       </div>
 
       <p
-        className="text-black text-sm p-2.5 pb-5 "
+        className="inline-block text-black text-sm p-1.5 mt-1.5 bg-white rounded-lg "
         style={{ visibility: validationCondition ? "visible" : "hidden" }}>
         Email is invalid. Required format `xxx@xx.xx`
       </p>

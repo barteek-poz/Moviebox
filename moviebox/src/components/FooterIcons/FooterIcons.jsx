@@ -1,4 +1,4 @@
-import LOGO_ICON from "../../assets/logo.svg";
+import LOGO_ICON from "../../assets/logo_small.svg";
 import FACEBOOK_ICON from "../../assets/facebook.svg";
 import TWITTER_ICON from "../../assets/twitter.svg";
 import INSTAGRAM_ICON from "../../assets/instagram.svg";

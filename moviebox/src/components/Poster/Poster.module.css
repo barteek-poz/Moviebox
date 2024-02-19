@@ -19,7 +19,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  
   width: 100%;
   background-color: var(--color-main);
   color: var(--color-white);

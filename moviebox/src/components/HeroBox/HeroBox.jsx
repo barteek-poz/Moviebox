@@ -2,7 +2,7 @@ import { dateFormat } from "../../helpers/dateFormat";
 import { mediaType } from "../../helpers/mediaType";
 import { ratingFormat } from "../../helpers/ratingFormat";
 import { Link } from "react-router-dom";
-import STAR_ICON from "../../assets/star.svg";
+import STAR_ICON from "../../assets/star_big.svg";
 
 export const HeroBox = ({
   id,
@@ -17,11 +17,11 @@ export const HeroBox = ({
 }) => {
   return (
     <div
-      className="flex items-center bg-cover bg-center"
+      className="flex h-700 items-center bg-cover bg-top"
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
       }}>
-      <div className="max-w-3xl flex flex-col gap-2.5 p-2.5 ml-20 bg-main">
+      <div className="max-w-500 flex flex-col gap-2.5 p-4 ml-32 bg-main rounded-lg">
         <Link to={`${media_type}/${id}`}>
           <span className="text-3xl text-white font-bold hover:border-b hover:border-b-yellow ">
             {title || name}

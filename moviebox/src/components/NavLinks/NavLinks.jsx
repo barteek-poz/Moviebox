@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo_big.svg";
 export const NavLinks = () => {
   return (
     <div className="NAVBAR py-2.5 flex items-center justify-between  flex-1">
