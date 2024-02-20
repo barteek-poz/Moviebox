@@ -10,8 +10,9 @@ import "swiper/css/scrollbar";
 
 export const Hero = ({titlesArr}) => {
   return (
-    <div className="w-full max-w-2500 mx-auto">
+    <div className=" w-full max-w-2500 mx-auto">
       <Swiper
+      
         autoplay={{
           delay: 8000,
           disableOnInteraction: false,
@@ -20,7 +21,6 @@ export const Hero = ({titlesArr}) => {
         navigation={true}
         mousewheel={true}
         keyboard={true}
-  
         loop={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         >

@@ -4,7 +4,7 @@ import { NavSearchBar } from "../NavSearchBar/NavSearchBar";
 
 export const Navigation = () => {
   return (
-    <div className="NAVBACKGROUND w-full bg-black h-24 border-b border-b-yellow">
+    <div className="NAVBACKGROUND  bg-yellow h-24">
       <CenteredContent>
         <nav className="NAV flex items-center justify-between py-2.5">
           <NavLinks />

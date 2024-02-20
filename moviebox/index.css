@@ -62,27 +62,5 @@
     
   }
 
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    color: black;
-  }
-
-  .titleSwiper {
-    position: static !important;
-    display: grid !important;
-    margin-left: 50px;
-  }
-  .titleSwiper [class^="swiper-button-"] {
-    inset: initial;
-    margin: 0;
-    align-self: center;
-  }
-  .titleSwiper .swiper-button-prev {
-    justify-self: start;
-    margin-left: -50px;
-  }
-  .titleSwiper .swiper-button-next {
-    justify-self: end;
-    margin-left: 100px;
-  }
+  
 }

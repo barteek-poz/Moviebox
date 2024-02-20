@@ -14,6 +14,10 @@ export default {
         600: "600px",
         500: '500px'
       },
+      minWidth: {
+        400: '400px',
+        500: '500px',
+      },
       font: {
         mainFont: "Roboto, sans-serif",
       },

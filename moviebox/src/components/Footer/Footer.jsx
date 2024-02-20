@@ -4,7 +4,7 @@ import { FooterIcons } from "../FooterIcons/FooterIcons";
 
 export const Footer = () => {
   return (
-    <div className="w-lvw bg-yellow border-t border-t-yellow ">
+    <div className=" bg-yellow border-t border-t-yellow mt-20">
       <CenteredContent>
         <div className="flex justify-between items-center py-2.5 pb-2 ">
           <div>

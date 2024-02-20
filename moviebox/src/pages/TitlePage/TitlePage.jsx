@@ -1,7 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
 import { TitleDetails } from "../../components/TitleDetails/TitleDetails";
-import styles from "../TitlePage/TitlePage.module.css";
 import NO_POSTER from "../../assets/no_poster.png";
 
 export const TitlePage = () => {
@@ -11,9 +10,9 @@ export const TitlePage = () => {
   return (
    
       <CenteredContent>
-        <div className={styles.titleBox}>
+        <div className="TITLE-BOX flex items-center gap-12 mt-12 mb-16">
           <div
-            className={styles.posterBox}
+            className="POSTER-BOX min-w-500 h-700 bg-cover bg-center bg-no-repeat rounded-lg"
             style={{
               backgroundImage: loaderData.details.poster_path
                 ? `url(https://image.tmdb.org/t/p/original/${loaderData.details.poster_path})`

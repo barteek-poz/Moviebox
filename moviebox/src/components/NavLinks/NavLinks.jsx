@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo_big.svg";
+import logo from "../../assets/logo_small.svg";
 export const NavLinks = () => {
   return (
     <div className="NAVBAR py-2.5 flex items-center justify-between  flex-1">
@@ -7,7 +7,7 @@ export const NavLinks = () => {
         <img
           src={logo}
           alt="logo"
-          className="LOGO border border-yellow rounded-lg p-1 pl-1.5 "
+          className="LOGO  rounded-lg p-1 pl-1.5 transition duration-300 hover:scale-105 "
         />
       </Link>
 
@@ -16,8 +16,8 @@ export const NavLinks = () => {
           to="/movies"
           className={({ isActive }) =>
             isActive
-              ? `ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-transparent transition duration-300 rounded-lg bg-yellow `
-              : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-white py-0.5 px-2 border-2 border-transparent transition duration-300 hover:text-yellow hover:border-b hover:border-b-yellow hover:scale-105`
+              ? `NO-ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-black transition duration-300 rounded-lg`
+              : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 transition duration-300 border-b border-transparent  hover:border-b-2 hover:border-b-black hover:scale-105`
           }>
           Movies
         </NavLink>
@@ -25,8 +25,8 @@ export const NavLinks = () => {
           to="/tv"
           className={({ isActive }) =>
             isActive
-              ? `ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-transparent transition duration-300 rounded-lg bg-yellow `
-              : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-white py-0.5 px-2 border-2 border-transparent transition duration-300 hover:text-yellow hover:border-b hover:border-b-yellow hover:scale-105`
+            ? `NO-ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-black transition duration-300 rounded-lg`
+            : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 transition duration-300 border-b border-transparent  hover:border-b-2 hover:border-b-black hover:scale-105`
           }>
           TV Shows
         </NavLink>
@@ -34,8 +34,8 @@ export const NavLinks = () => {
           to="/streaming"
           className={({ isActive }) =>
             isActive
-              ? `ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-transparent transition duration-300 rounded-lg bg-yellow `
-              : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-white py-0.5 px-2 border-2 border-transparent transition duration-300 hover:text-yellow hover:border-b hover:border-b-yellow hover:scale-105`
+            ? `NO-ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-black transition duration-300 rounded-lg`
+            : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 transition duration-300 border-b border-transparent  hover:border-b-2 hover:border-b-black hover:scale-105`
           }>
           Streaming
         </NavLink>
@@ -43,8 +43,8 @@ export const NavLinks = () => {
           to="/watchlist"
           className={({ isActive }) =>
             isActive
-              ? `ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-transparent transition duration-300 rounded-lg bg-yellow `
-              : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-white py-0.5 px-2 border-2 border-transparent transition duration-300 hover:text-yellow hover:border-b hover:border-b-yellow hover:scale-105`
+            ? `NO-ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 border-2 border-black transition duration-300 rounded-lg`
+            : `NAV LINK ACTIVE no-underline uppercase text-xl font-medium text-black py-0.5 px-2 transition duration-300 border-b border-transparent  hover:border-b-2 hover:border-b-black hover:scale-105`
           }>
           Watchlist
         </NavLink>

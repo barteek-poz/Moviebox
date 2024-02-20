@@ -1,7 +1,6 @@
 
 import { CenteredContent } from "../../components/CenteredContent/CenteredContent";
 import { Poster } from "../../components/Poster/Poster";
-import styles from "../Watchlist/Watchlist.module.css";
 import { useContext, useState } from "react";
 import { WatchlistContext } from "../../context/WatchlistContext";
 import { filterWatchlist } from "../../helpers/filterWatchlist";
@@ -15,8 +14,8 @@ export const Watchlist = () => {
   return (
     
       <CenteredContent>
-        <div className={styles.header}>
-          <h2>Your Watchlist</h2>
+        <div className="HEADER flex flex-col items-start">
+          <h2 className="my-10">Your Watchlist</h2>
           <select
             name="watch_media"
             id="watch_media"
@@ -32,7 +31,7 @@ export const Watchlist = () => {
             <option value="both">Movie & TV Show</option>
           </select>
         </div>
-        <div className={styles.titleList}>
+        <div className="TITLE-LIST flex flex-wrap gap-4 my-12">
           {isFiltered
             ? watchlistFilter.map((title) => {
                 return <Poster key={title.id} titleData={title} />;

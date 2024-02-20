@@ -33,7 +33,7 @@ export const NavSearchBar = () => {
       <input
         onChange={(e) => setInputValue(e.target.value)}
         onFocus={() => setIsFocused(true)}
-        className="INPUT text-lg font-light outline-none border-transparent border-b border-b-yellow text-white pl-2.5 w-64 h-8 bg-transparent focus:outline-yellow focus:border-b-transparent focus:outline-1 focus:rounded-lg"
+        className="INPUT text-lg font-light outline-none border-transparent border-b-2 border-b-black text-black pl-2.5 w-64 h-8 bg-transparent focus:outline-black focus:border-b-transparent focus:outline-1 placeholder:text-black focus:rounded-lg"
         type="text"
         name="search"
         placeholder="Search"

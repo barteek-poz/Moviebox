@@ -4,7 +4,7 @@ import { Navigation } from "../Navigation/Navigation";
 
 export const MainLayout = () => {
   return (
-    <div className="flex flex-col h-lvh w-lvw">
+    <div className="flex h-lvh min-h-full flex-col justify-between">
       <Navigation />
       
       <Outlet/>

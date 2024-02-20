@@ -5,83 +5,17 @@
   --color-white: rgba(255, 255, 255, 1);
   --color-yellow: rgb(255, 199, 0);
   --main-font: "Roboto", sans-serif;
- 
 }
 
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
- 
-  font-family: var(--main-font);
-  background-color: var(--color-main);
-}
-
-
-h1{
-  font-size: 3.6rem;
-  color: var(--color-white);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-h2 {
-  display: inline-block;
-  font-size: 2.4rem;
-  color: var(--color-white);
-  font-weight: 700;
-  text-transform: uppercase;
-  border-bottom: 2px solid var(--color-yellow);
-
-}
-h3 {
-  font-size: 2.0rem;
-  color: var(--color-white);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-button {
-  font-family: inherit;
-  color: var(--color-black);
-  background-color: var(--color-yellow);
-  cursor: pointer;
-  transition: .3s;
-  border-radius: 10px;
-} 
-button:hover, button:hover svg {
-   background-color: var(--color-white);
-  color: var(--color-black);
-  fill: var(--color-white);
-}
-
-select {
-  height: 36px;
-  border-radius: 10px;
-  border: none;
-  color:var(--color-main);
-  background-color: var(--color-yellow);
-} */
-
-/* swiper styles */
-
-
-/* .swiper-button-next::after,
+.swiper-button-next::after,
 .swiper-button-prev::after {
-  color: var(--color-white);
+  color: var(--color-yellow);
 }
 
 .titleSwiper {
   position: static !important;
   display: grid !important;
-  margin-left: 50px;
+  margin-left: 0px;
 }
 .titleSwiper [class^="swiper-button-"] {
   inset: initial;
@@ -95,4 +29,4 @@ select {
 .titleSwiper .swiper-button-next {
   justify-self: end;
   margin-left: 100px;
-} */
+}

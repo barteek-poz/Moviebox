@@ -20,7 +20,7 @@ export const PosterBig = ({ title, media }) => {
       />
       <div className="POSTER-INFO max-w-500 flex flex-col gap-4 p-7 pt-14 bg-yellow rounded-tr-lg rounded-br-lg">
         <Link to={`${title.media_type || media}/${title.id}`}>
-          <span className="text-3xl font-bold tracking-wide  border-b-0 border-b-black hover:border-b-2">
+          <span className="text-3xl font-bold tracking-wide transition duration-300  border-b-2 border-b-transparent hover:border-b-black">
             {title.title || title.name}
           </span>
         </Link>

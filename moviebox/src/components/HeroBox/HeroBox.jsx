@@ -23,7 +23,7 @@ export const HeroBox = ({
       }}>
       <div className="max-w-500 flex flex-col gap-2.5 p-4 ml-32 bg-main rounded-lg">
         <Link to={`${media_type}/${id}`}>
-          <span className="text-3xl text-white font-bold hover:border-b hover:border-b-yellow ">
+          <span className="text-3xl text-white font-bol transition duration-300 border-b-2 border-b-transparent hover:border-b-yellow ">
             {title || name}
           </span>
         </Link>
@@ -32,7 +32,7 @@ export const HeroBox = ({
           <p>{mediaType(media_type)}</p>
         </div>
         <div className="flex items-center gap-2.5 text-white text-xl">
-          <img src={STAR_ICON} alt="star-icon" />
+          <img src={STAR_ICON} alt="star-icon" className="w-6 h-6"/>
           <p className="text-3xl">{ratingFormat(vote_average)}</p>
         </div>
         <p className="text-base text-white">{overview}</p>
