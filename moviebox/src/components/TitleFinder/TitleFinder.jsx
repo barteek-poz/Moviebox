@@ -37,10 +37,10 @@ export const TitleFinder = () => {
   return (
     <CenteredContent>
      
-     <h2 className="FINDER-HEADER bg-yellow text-black p-2.5 rounded-lg ml-5 my-8">
+     <h2 className="FINDER-HEADER bg-yellow text-black p-2.5 rounded-lg  my-8">
         Don`t know what to watch? Let us help you!
       </h2>
-      <Form className="FORM flex items-center gap-5 ml-5 mb-14">
+      <Form className="FORM flex items-center gap-5 mb-14">
         <select
           value={titleMedia}
           name="media"

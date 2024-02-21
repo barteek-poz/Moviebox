@@ -24,7 +24,7 @@ export const AddToWatchlistBtn = ({ titleData, media }) => {
   return (
     <button
       onClick={watchlistHandler}
-      className="flex items-center text-xl p-2 font-medium border-none hover:bg-white">
+      className="flex items-center justify-center text-xl p-2 min-w-48 font-medium border-none hover:bg-white">
       {isOnWatchlist ? (
         <p>Remove from watchlist</p>
       ) : (

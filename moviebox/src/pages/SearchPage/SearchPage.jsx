@@ -5,11 +5,11 @@ import { Poster } from "../../components/Poster/Poster";
 export const SearchPage = () => {
   const loaderData = useLoaderData();
   const params = useParams();
-console.log(loaderData)
+console.log(params)
   return (
       <CenteredContent>
         <h2 className="my-10">Search results for `{params.param}`</h2>
-        <div className="flex flex-wrap gap-2.5 mb-8">
+        <div className="flex flex-wrap justify-between gap-2.5 mb-8 min-h-500">
           {loaderData.length ?
             loaderData.map((title) => {
               return <Poster key={title.id} titleData={title} />;

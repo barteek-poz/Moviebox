@@ -10,13 +10,13 @@ export const Watchlist = () => {
   const [isFiltered, setIsFiltered] = useState(false);
   const ctx = useContext(WatchlistContext);
   const watchlistFilter = filterWatchlist(ctx.watchlist, filter);
-  console.log(watchlistFilter);
+  console.log(ctx.watchlist);
   return (
     
       <CenteredContent>
         <div className="HEADER flex flex-col items-start">
-          <h2 className="my-10">Your Watchlist</h2>
-          <select
+          <h2 className="my-10">Watchlist</h2>
+           {ctx.watchlist.length !== 0 && <select
             name="watch_media"
             id="watch_media"
             onChange={(e) => {
@@ -29,9 +29,9 @@ export const Watchlist = () => {
             <option value="movie">Movie</option>
             <option value="tv">TV Show</option>
             <option value="both">Movie & TV Show</option>
-          </select>
+          </select>}
         </div>
-        <div className="TITLE-LIST flex flex-wrap gap-4 my-12">
+       {ctx.watchlist.length !== 0 ? <div className="TITLE-LIST flex flex-wrap gap-4 my-12 h-full">
           {isFiltered
             ? watchlistFilter.map((title) => {
                 return <Poster key={title.id} titleData={title} />;
@@ -39,7 +39,7 @@ export const Watchlist = () => {
             : ctx.watchlist.map((title) => {
                 return <Poster key={title.id} titleData={title} />;
               })}
-        </div>
+        </div> : <h3 className="text-3xl flex flex-col gap-5 text-center pt-16 h-500">Your watchlist is empty <span>Add your favourite titles to save them for later!</span> </h3>}
       </CenteredContent>
    
   );

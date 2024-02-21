@@ -15,7 +15,7 @@
 .titleSwiper {
   position: static !important;
   display: grid !important;
-  margin-left: 0px;
+  margin-left: 50px;
 }
 .titleSwiper [class^="swiper-button-"] {
   inset: initial;
@@ -28,5 +28,5 @@
 }
 .titleSwiper .swiper-button-next {
   justify-self: end;
-  margin-left: 100px;
-}
+  margin-right: -50px;
+} 

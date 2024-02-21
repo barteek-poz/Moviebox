@@ -1,5 +1,4 @@
 export const searchTitleLoader = async (params) => {
-  console.log(params.param);
   const options = {
     method: "GET",
     headers: {

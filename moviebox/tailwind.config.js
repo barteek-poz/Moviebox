@@ -12,29 +12,36 @@ export default {
         1500: "1500px",
         2500: "2500px",
         600: "600px",
-        500: '500px'
+        500: "500px",
       },
       minWidth: {
-        400: '400px',
-        500: '500px',
+        400: "400px",
+        500: "500px",
       },
       font: {
         mainFont: "Roboto, sans-serif",
       },
       height: {
         700: "700px",
-        400: '400px',
+        400: "400px",
+        500: "500px",
+        600: "600px",
         900: "900px",
         335: "335px",
+      },
+      borderWidth: {
+        12: "12px",
       },
       keyframes: {
         slidein: {
           "0%": { height: "0" },
           "100%": { heigth: "100%" },
         },
+       
       },
       animation: {
         slidein: "slidein .4s",
+        
       },
     },
   },

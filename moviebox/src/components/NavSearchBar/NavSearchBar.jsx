@@ -12,8 +12,8 @@ export const NavSearchBar = () => {
 
   const searchHandler = (event) => {
     if (event.key === "Enter" && inputValue.length > 0) {
-      navigate(`/search/${inputValue}`);
       setInputValue("");
+      navigate(`/search/${inputValue}`);
     }
   };
 
@@ -21,11 +21,13 @@ export const NavSearchBar = () => {
     const handleOutSideClick = (event) => {
       if (!ref.current?.contains(event.target)) {
         setIsFocused(false);
+        setInputValue("");
       }
     };
     window.addEventListener("mousedown", handleOutSideClick);
     return () => {
       window.removeEventListener("mousedown", handleOutSideClick);
+      setInputValue("");
     };
   }, [ref]);
   return (
@@ -38,6 +40,7 @@ export const NavSearchBar = () => {
         name="search"
         placeholder="Search"
         onKeyUp={searchHandler}
+        value={inputValue}
       />
       <div className="RESULTS absolute top-10 z-10 rounded-lg overflow-hidden">
         {searchedTitles &&

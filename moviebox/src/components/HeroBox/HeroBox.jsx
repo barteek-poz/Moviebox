@@ -17,7 +17,7 @@ export const HeroBox = ({
 }) => {
   return (
     <div
-      className="flex h-700 items-center bg-cover bg-top"
+      className="flex h-600 items-center bg-cover bg-top"
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
       }}>
