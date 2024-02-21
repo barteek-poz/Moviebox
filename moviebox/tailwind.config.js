@@ -35,7 +35,7 @@ export default {
       keyframes: {
         slidein: {
           "0%": { height: "0" },
-          "100%": { heigth: "100%" },
+          "100%": { height: "100%" },
         },
        
       },
