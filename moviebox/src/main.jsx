@@ -17,6 +17,7 @@ import { SearchPage } from "./pages/SearchPage/SearchPage.jsx";
 import { searchTitleLoader } from "./loaders/searchTitleLoader.js";
 import { WatchlistProvider } from "./context/WatchlistContext.jsx";
 import { MainLayout } from "./components/MainLayout/MainLayout.jsx";
+import { ErrorElement } from "./components/ErrorElement/ErrorElement.jsx";
 
 //zmienic routing tak zeby byly childreny a nie osobne sciezki
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorElement/>,
 
     children: [
       {

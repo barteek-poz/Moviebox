@@ -51,9 +51,11 @@
     @apply text-black;
   }
   button {
-   
     @apply transition;
     @apply duration-300;
+  }
+  a:focus, select:focus,button:focus {
+    @apply outline-white;
   }
   
 

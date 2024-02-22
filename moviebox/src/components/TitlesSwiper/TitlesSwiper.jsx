@@ -7,31 +7,19 @@ import { Navigation, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Poster } from "../Poster/Poster";
 import { CenteredContent } from "../CenteredContent/CenteredContent";
-import { useEffect, useState } from "react";
-import { numberOfPosters } from "../../helpers/numberOfPosters";
+import { useLayout } from "../../hooks/useLayout";
 export const TitleSwiper = ({ titlesArr, media }) => {
-  
-  const [numberOfSlides, setNumberOfSlides] = useState(4)
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setNumberOfSlides(numberOfPosters(window.innerWidth))
-    };
+  const { screenWidth, numberOfSlides } = useLayout();
 
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
+  console.log(screenWidth);
   return (
     <CenteredContent>
       <Swiper
         loop={true}
         slidesPerView={numberOfSlides}
-        navigation={true}
+        navigation={screenWidth > 1100 ? true : false}
         modules={[Navigation, FreeMode]}
-        className="titleSwiper lg:max-w-6xl xl:min-w-5/6 2xl:min-w-full">
+        className="titleSwiper xl:min-w-5/6 2xl:min-w-full">
         {titlesArr.map((title) => {
           return (
             <SwiperSlide key={Math.random()}>
