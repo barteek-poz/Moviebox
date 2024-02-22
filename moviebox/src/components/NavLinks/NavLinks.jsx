@@ -1,15 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo_small.svg";
+import { NavLink } from "react-router-dom";
+
 export const NavLinks = () => {
   return (
     <div className="NAVBAR py-2.5 flex items-center justify-between  flex-1">
-      <Link to="/" className="">
-        <img
-          src={logo}
-          alt="logo"
-          className="LOGO  rounded-lg p-1 pl-1.5 transition duration-300 hover:scale-105 "
-        />
-      </Link>
+     
 
       <div className="NAV LINKS flex  items-center justify-end gap-6 flex-1 mr-6">
         <NavLink
