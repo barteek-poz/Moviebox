@@ -9,7 +9,7 @@ console.log(params)
   return (
       <CenteredContent>
         <h2 className="my-10">Search results for `{params.param}`</h2>
-        <div className="flex flex-wrap justify-between gap-2.5 mb-8 min-h-500">
+        <div className="flex flex-wrap justify-around gap-2.5 mb-8 min-h-500 z-10">
           {loaderData.length ?
             loaderData.map((title) => {
               return <Poster key={title.id} titleData={title} />;

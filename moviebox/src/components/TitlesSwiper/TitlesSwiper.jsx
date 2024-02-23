@@ -11,7 +11,7 @@ import { useLayout } from "../../hooks/useLayout";
 export const TitleSwiper = ({ titlesArr, media }) => {
   const { screenWidth, numberOfSlides } = useLayout();
 
-  console.log(screenWidth);
+  
   return (
     <CenteredContent>
       <Swiper

@@ -19,8 +19,6 @@ import { WatchlistProvider } from "./context/WatchlistContext.jsx";
 import { MainLayout } from "./components/MainLayout/MainLayout.jsx";
 import { ErrorElement } from "./components/ErrorElement/ErrorElement.jsx";
 
-//zmienic routing tak zeby byly childreny a nie osobne sciezki
-
 const router = createBrowserRouter([
   {
     path: "/",
