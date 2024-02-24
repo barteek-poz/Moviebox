@@ -10,7 +10,7 @@ export const Poster = ({ titleData, media }) => {
 
   return (
     <div
-      className="BACKGROUND sm:w-52 sm:h-80 lg:w-56 lg:h-335 bg-cover bg-center bg-no-repeat flex items-end rounded-lg overflow-hidden relative hover:border hover:border-yellow "
+      className="BACKGROUND mobile:w-40 mobile:h-60 md:w-52 md:h-80 lg:w-56 lg:h-335 bg-cover bg-center bg-no-repeat flex items-end rounded-lg overflow-hidden relative hover:border hover:border-yellow "
       style={{
         backgroundImage: titleData.poster_path
           ? `url(https://image.tmdb.org/t/p/original/${titleData.poster_path})`

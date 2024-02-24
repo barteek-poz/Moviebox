@@ -17,11 +17,11 @@ export const HeroBox = ({
 }) => {
   return (
     <div
-      className="flex h-600 items-center bg-cover bg-top 2xl:h-700"
+      className="flex  h-600 mobile:items-end lg:items-center bg-cover bg-top 2xl:h-700"
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${backdrop_path})`,
       }}>
-      <div className="max-w-500 flex flex-col gap-2.5 p-4 ml-32 bg-main rounded-lg">
+      <div className="lg:max-w-500 mobile:h-min flex flex-col gap-2.5 p-4 lg:ml-14 2xl:ml-32 bg-main rounded-lg">
         <Link to={`${media_type}/${id}`}>
           <span className="text-3xl text-white font-bol transition duration-300 border-b-2 border-b-transparent hover:border-b-yellow ">
             {title || name}

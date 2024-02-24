@@ -4,7 +4,7 @@ export const TitlesSection = (props) => {
   return (
     <CenteredContent>
       <div className="TITLES mb-8">
-        <h2 className="my-10 ml-10">{props.title}</h2>
+        <h2 className="mobile:my-6 mobile:ml-2 lg:my-10 lg:ml-10">{props.title}</h2>
         <TitleSwiper titlesArr={props.titlesArr} media={props.media}/>
       </div>
     </CenteredContent>

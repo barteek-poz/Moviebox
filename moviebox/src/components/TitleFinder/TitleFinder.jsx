@@ -4,14 +4,15 @@ import { PosterBig } from "../PosterBig/PosterBig";
 import ARROW_ICON from "../../assets/arrow.svg";
 import { useState } from "react";
 import { usePickTitle } from "../../hooks/usePickTitle";
+import { useLayout } from "../../hooks/useLayout";
 
 export const TitleFinder = () => {
   const [searchPage, setSearchPage] = useState(0);
   const [titleMedia, setTitleMedia] = useState("default");
   const [isError, setIsError] = useState(false);
   const [isTouched, setIsTouched] = useState(false);
-
   const titleData = usePickTitle(titleMedia, searchPage);
+  const {screenWidth} = useLayout()
 
   const titleFindHandler = () => {
     setIsTouched(false);
@@ -66,12 +67,13 @@ export const TitleFinder = () => {
       </div>
 
       {titleData && (
-        <div className="FINDER flex items-center justify-center gap-16">
+        <div className="FINDER flex mobile:flex-col lg:flex-row lg:items-center justify-center lg:gap-16 lg:mb-16">
           <PosterBig title={titleData} media={titleMedia} />
           <button
-            className="ICON bg-transparent border-none hover:translate-x-2"
+            className="ICON bg-transparent border-none hover:translate-x-2 mobile:flex mobile:flex-col mobile:items-center mobile:gap-2.5"
             onClick={titleFindHandler}>
             <img src={ARROW_ICON} alt="arrow" />
+          {screenWidth < 1024 ? <p className="text-yellow">Next title</p> : ''}
           </button>
         </div>
       )}

@@ -43,6 +43,9 @@ export default {
         slidein: "slidein .4s",
         
       },
+      screens: {
+        'mobile': '360px'
+      }
     },
   },
   plugins: [],

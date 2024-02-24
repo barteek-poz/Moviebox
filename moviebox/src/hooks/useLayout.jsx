@@ -16,5 +16,6 @@ export const useLayout = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
+  console.log(numberOfSlides, screenWidth)
   return {screenWidth, numberOfSlides}
 };
