@@ -13,7 +13,7 @@ export const Navigation = () => {
   const { screenWidth } = useLayout();
 
   return (
-    <div className="NAVBACKGROUND  bg-yellow h-24">
+    <div className="NAVBACKGROUND  bg-yellow h-24 ">
       <CenteredContent>
         <nav className="NAV flex items-center justify-between py-2.5">
           <Link to="/" className="">

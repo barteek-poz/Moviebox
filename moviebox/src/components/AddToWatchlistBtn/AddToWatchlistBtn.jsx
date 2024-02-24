@@ -20,7 +20,7 @@ export const AddToWatchlistBtn = ({ titleData, media }) => {
       setIsOnWatchlist(true);
     }
   };
-  console.log(isOnWatchlist);
+ 
   return (
     <button
       onClick={watchlistHandler}
