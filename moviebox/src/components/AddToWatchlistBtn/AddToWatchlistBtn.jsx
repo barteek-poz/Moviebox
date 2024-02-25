@@ -29,7 +29,7 @@ export const AddToWatchlistBtn = ({ titleData, media }) => {
         <p>Remove from watchlist</p>
       ) : (
         <p>
-          Add to watchlist{" "}
+          Add to watchlist
           <img src={ADD_ICON} alt="add-icon" className="inline w-4 h-4 mb-1" />
         </p>
       )}

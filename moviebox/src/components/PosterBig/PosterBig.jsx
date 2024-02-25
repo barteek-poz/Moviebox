@@ -10,7 +10,7 @@ export const PosterBig = ({ title, media }) => {
     <div className="POSTER-BOX flex mobile:flex-col lg:flex-row mobile:items-center lg:items-stretch mobile:mb-6">
       <Link
         to={`${media}/${title.id}`}
-        className="POSTER mobile:w-80 sm:w-96 h-400 bg-center bg-cover mobile:rounded-tl-lg mobile:rounded-tr-lg  lg:rounded-tr-none lg:rounded-bl-lg lg:rounded-tl-lg "
+        className="POSTER mobile:w-80 mobile:h-500  sm:min-w-96 sm:min-h-400 bg-center bg-cover mobile:rounded-tl-lg mobile:rounded-tr-lg  lg:rounded-tr-none lg:rounded-bl-lg lg:rounded-tl-lg "
         style={{
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${title.poster_path})`,
         }}
