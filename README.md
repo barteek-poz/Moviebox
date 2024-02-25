@@ -7,7 +7,7 @@ The entire project was created by me in Figma (https://www.figma.com/file/MULvxD
 The website is divided into five sections - home, movies, tv shows, streaming, and watchlist. Each section contains information about current premieres, most popular titles, or highest-rated movies and series. 
 
 ![image](https://github.com/barteek-poz/Moviebox/assets/109816351/be8cd729-7e75-41b8-ae7f-e5940787f947)
-![image](https://github.com/barteek-poz/Moviebox/assets/109816351/f0f0796e-5cda-470d-96a4-5eb26a01d510)
+![image](https://github.com/barteek-poz/Moviebox/assets/109816351/fccb9a5a-e6ee-4814-8809-22990131eac6)
 ![image](https://github.com/barteek-poz/Moviebox/assets/109816351/30fdfee0-4061-4282-b9a7-d626899e63f4) <br>
 
 **RANDOM TITLE GENERATOR** <br>
