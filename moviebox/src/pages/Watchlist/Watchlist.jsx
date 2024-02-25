@@ -31,7 +31,7 @@ export const Watchlist = () => {
             <option value="both">Movie & TV Show</option>
           </select>}
         </div>
-       {ctx.watchlist.length !== 0 ? <div className="TITLE-LIST flex flex-wrap gap-4 my-12 h-500">
+       {ctx.watchlist.length !== 0 ? <div className="TITLE-LIST flex flex-wrap gap-4 my-12 min-h-500">
           {isFiltered
             ? watchlistFilter.map((title) => {
                 return <Poster key={title.id} titleData={title} />;

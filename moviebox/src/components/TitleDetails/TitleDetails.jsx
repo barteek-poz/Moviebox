@@ -5,10 +5,7 @@ import { directorFormat } from "../../helpers/directorFormat";
 import { runtimeFormat } from "../../helpers/runtimeFormat";
 import { AddToWatchlistBtn } from "../../components/AddToWatchlistBtn/AddToWatchlistBtn";
 
-
-
 export const TitleDetails = ({ loaderData, params }) => {
-  
   const cast = loaderData.cast.cast
     .filter((actor) => {
       if (actor.known_for_department === "Acting") {
@@ -19,12 +16,12 @@ export const TitleDetails = ({ loaderData, params }) => {
   loaderData.details.media = params.media;
   return (
     <>
-      <div className="TITLE-INFO text-xl font-light text-white">
-        <div className="TITLE-ROW flex items-center justify-between mb-5">
+      <div className="TITLE-INFO text-xl font-light text-white mobile:px-4 xl:px-10 mobile:pt-2.5 lg:pt-12 xl:pt-0 ">
+        <div className="TITLE-ROW flex mobile:flex-col xl:flex-row gap-6 items-center justify-between mb-5 ">
           <h1>
             {loaderData.details.original_title || loaderData.details.name}
           </h1>
-          <AddToWatchlistBtn titleData={loaderData} media={params.media}  />
+          <AddToWatchlistBtn titleData={loaderData} media={params.media} />
         </div>
         <div className="ROW flex items-start gap-5 mb-5">
           <p>
@@ -44,21 +41,29 @@ export const TitleDetails = ({ loaderData, params }) => {
         <div className="ROW flex items-start gap-5 mb-5 ">
           {loaderData.details.genres.map((genre) => {
             return (
-              <p key={genre.id} className="GENRE text-base border border-yellow p-1.5 rounded-lg ">
+              <p
+                key={genre.id}
+                className="GENRE text-base border border-yellow p-1.5 rounded-lg ">
                 {genre.name}
               </p>
             );
           })}
         </div>
         <div className="ROW-CAST flex items-start gap-2.5 mb-5 ">
-          <span className="font-bold">{params.media === "movie" ? "Director:" : "Creator:"}</span>
+          <span className="font-bold">
+            {params.media === "movie" ? "Director:" : "Creator:"}
+          </span>
           <p>{directorFormat(loaderData.cast.crew)}</p>
         </div>
 
-        <div className="ROW-CAST flex items-start gap-2.5 mb-5 ">
+        <div className="ROW-CAST flex items-start  gap-2.5 mb-5 ">
           <span className="font-bold">Stars:</span>
           {cast.map((actor) => {
-            return <p key={actor.id}>{actor.name}</p>;
+            return (
+              <p key={actor.id} className="text-start">
+                {actor.name}
+              </p>
+            );
           })}
         </div>
         <div className="ROW-CAST flex items-start gap-2.5 mb-5 ">
@@ -83,7 +88,7 @@ export const TitleDetails = ({ loaderData, params }) => {
           )}
         </div>
         <div className="ROW-ICONS flex items-center gap-2.5 mb-5 ">
-          <span>Rent:</span>
+          <span className="font-bold">Rent:</span>
           {loaderData.streaming && loaderData.streaming.rent ? (
             loaderData.streaming.rent.map((company) => {
               return (
@@ -100,7 +105,7 @@ export const TitleDetails = ({ loaderData, params }) => {
           )}
         </div>
         <div className="ROW-ICONS flex items-center gap-2.5 mb-5 ">
-          <span>Buy:</span>
+          <span className="font-bold">Buy:</span>
           {loaderData.streaming && loaderData.streaming.buy ? (
             loaderData.streaming.buy.map((company) => {
               return (

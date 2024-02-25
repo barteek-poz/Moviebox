@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { ratingFormat } from "../../helpers/ratingFormat";
-
 import STAR_ICON from "../../assets/star_small.svg";
-
 import { genreType } from "../../helpers/genreType";
 
 export const PosterBig = ({ title, media }) => {
