@@ -1,7 +1,9 @@
-<h1>MOVIEBOX</h1> 
+![image](https://github.com/barteek-poz/Moviebox/assets/109816351/2c4be2e4-3f5a-4c44-b414-7c928f68656b)
+
+
 
 **MOVIEBOX** is an online service providing information about movie premieres, films, TV series, and titles available on streaming platforms. It also allows users to add their favorite titles to a watchlist. <br>
-The entire project was created by me in Figma (https://www.figma.com/file/MULvxDCbOLXVkWQdMn0BHI/MOVIEBOX?type=design&node-id=0%3A1&mode=dev), and then developed using React Router and Tailwind. Information on the website is fetched from the TMDB database (https://www.themoviedb.org/). <br> <br>
+The entire project was created by me in Figma (https://shorturl.at/tR1LW), and then developed using React Router and Tailwind. Information on the website is fetched from the TMDB database (https://www.themoviedb.org/). <br> <br>
 
 **MAIN PAGE** <br>
 The website is divided into five sections - home, movies, tv shows, streaming, and watchlist. Each section contains information about current premieres, most popular titles, or highest-rated movies and series. 
